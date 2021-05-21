@@ -1,5 +1,11 @@
 /*
-Родственные связи кошек
+Родственные связи кошек:
+дедушка Вася (папин папа)
+бабуша Мурка (мамина мама)
+папа Котофей
+мама Василиса
+сын Мурчик
+дочь Пушинка
 */
 
 import java.io.BufferedReader;
@@ -16,18 +22,20 @@ public class JR_task_6_11_Family_connexion_cats {
 // Читаем первую строку - дедушка Вася:
             String Grandpa_Vasya = reader.readLine();
 // Создаём нового кота - дедушку Васю:
-            Cat catGrandpa = new Cat(Grandpa_Vasya);
+            Cat Vasya = new Cat(Grandpa_Vasya);
 
-// Читаем вторую строку - бабушка Мурка:
-            String catGrandM = reader.readLine();
-            Cat catGrandM= new Cat(catGrandM);
+            // Читаем вторую строку - бабушка Мурка:
+            String Grandma_Myrka = reader.readLine();
+                        // Создаём нового кота - бабушку Мурку
+            Cat Myrka = new Cat(Grandma_Myrka);
 
-            String f= reader.readLine();
-            Cat catFather = new Cat(fatherName);
+            // Читаем третью строку - папа Котофей:
+            String Father_Kotofey = reader.readLine();
+            Cat Kotofey = new Cat(Father_Kotofey);
 
-            System.out.println(catGrand);
-            System.out.println(catDaughter);
-            System.out.println(catFather);
+            System.out.println(Vasya);
+            System.out.println(Myrka);
+            System.out.println(Kotofey);
         }
 
         public static class Cat {
