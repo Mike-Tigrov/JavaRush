@@ -39,22 +39,22 @@ public class JR_task_6_11_Family_connexion_cats {
 
             // Читаем третью строку - папа Котофей:
             String Father_Kotofey = reader.readLine();
-            // Создаём нового кота - папу Котофея:
-            Cat Kotofey = new Cat(Father_Kotofey);
+            // Создаём нового кота - папу Котофея и добавляем его папу - дедушку Васю:
+            Cat Kotofey = new Cat(Father_Kotofey, null, Vasya);
 
             // Читаем 4 строку - мама Василиса:
             String Mother_Vasilisa = reader.readLine();
-            // Создаём нового кота - маму Василису:
-            Cat Vasilisa = new Cat(Mother_Vasilisa, Myrka);
+            // Создаём нового кота - маму Василису и добавляем её мама - бабушку Мурку:
+            Cat Vasilisa = new Cat(Mother_Vasilisa, Myrka, null);
 
             // Читаем 5 строку - сын Мурчик:
             String Sun_Myr4ik = reader.readLine();
-            // Создаём нового кота - сына Мурчика:
+            // Создаём нового кота - сына Мурчика и добавляем ему родителей:
             Cat Myr4ik = new Cat(Sun_Myr4ik, Vasilisa, Kotofey);
 
             // Читаем 6 сроку - дочь Пушинка:
             String Daughter_Pux = reader.readLine();
-            // Создаём нового кота - дочь Пушинку
+            // Создаём нового кота - дочь Пушинку и добавляем ей родителей:
             Cat Pux = new Cat(Daughter_Pux, Vasilisa, Kotofey);
 
             System.out.println(Vasya);
@@ -72,11 +72,6 @@ public class JR_task_6_11_Family_connexion_cats {
 
             Cat(String name) {
                 this.name = name;
-            }
-
-            Cat(String name, Cat mother) {
-                this.name = name;
-                this.mother = mother;
             }
 
             Cat(String name, Cat mother, Cat father) {
