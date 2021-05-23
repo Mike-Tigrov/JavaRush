@@ -6,6 +6,14 @@
 мама Василиса
 сын Мурчик
 дочь Пушинка
+
+Для ввода:
+дедушка Вася
+бабушка Мурка
+папа Котофей
+мама Василиса
+сын Мурчик
+дочь Пушинка
 */
 
 import java.io.BufferedReader;
@@ -26,7 +34,7 @@ public class JR_task_6_11_Family_connexion_cats {
 
             // Читаем вторую строку - бабушка Мурка:
             String Grandma_Myrka = reader.readLine();
-                        // Создаём нового кота - бабушку Мурку:
+            // Создаём нового кота - бабушку Мурку:
             Cat Myrka = new Cat(Grandma_Myrka);
 
             // Читаем третью строку - папа Котофей:
@@ -64,6 +72,10 @@ public class JR_task_6_11_Family_connexion_cats {
 
             Cat(String name) {
                 this.name = name;
+            }
+            Cat(String name, Cat mother) {
+                this.name = name;
+                this.mother = mother;
             }
 
             Cat(String name, Cat mother, Cat father) {
