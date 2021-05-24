@@ -9,7 +9,7 @@ public class JR_task_0_4 {
             System.out.println("Элли самая красивая");
             System.out.println("Элли самая красивая");
             System.out.println("Элли самая красивая");
-            System.out.println("Элли самая красивая");//напишите тут ваш код
+            System.out.println("Элли самая красивая");
         }
     }
 
