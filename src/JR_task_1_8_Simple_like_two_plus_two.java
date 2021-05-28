@@ -1,0 +1,16 @@
+/*
+Просто, как 2+2
+*/
+
+public class JR_task_1_8_Simple_like_two_plus_two {
+
+        public static void main(String[] args) {
+            int a = 2, b = 2;
+            sum(a,b);//напишите тут ваш код
+        }
+
+        public static void sum(int a, int b) {
+            int c = a + b;
+            System.out.print(c);
+        }
+    }
