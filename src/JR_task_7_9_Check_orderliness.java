@@ -22,7 +22,6 @@ public class JR_task_7_9_Check_orderliness {
 */
 
         public static void main(String[] args) throws IOException {
-            //напишите тут ваш код
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
