@@ -4,13 +4,13 @@ public class JR_task_2_2_Where_does_Person_come_from {
 */
 
         public static void main(String[] args) {
-            Person person = new Person();//напишите тут ваш код
+            Person person = new Person();
         }
 
         public static class Person {
             int age;
             int money;
             String name;
-            int weight;//напишите тут ваш код
+            int weight;
         }
     }
