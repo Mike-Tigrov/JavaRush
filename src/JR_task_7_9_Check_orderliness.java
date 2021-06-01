@@ -19,6 +19,7 @@ public class JR_task_7_9_Check_orderliness {
 собака
 программа
 машина
+... и нажать Enter
 */
 
         public static void main(String[] args) throws IOException {
