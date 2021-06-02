@@ -7,7 +7,7 @@ public class JR_task_2_2_About_family_relationships {
             Man man = new Man();
             Woman woman = new Woman();
             woman.husband = man;
-            man.wife = woman; //напишите тут ваш код
+            man.wife = woman;
         }
 
         public static class Man {
