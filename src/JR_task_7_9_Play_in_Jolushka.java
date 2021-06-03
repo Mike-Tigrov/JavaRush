@@ -6,6 +6,28 @@ public class JR_task_7_9_Play_in_Jolushka {
 
 /*
 Играем в Jолушку
+
+Для вставки:
+5
+10
+16
+17
+9
+3
+4
+46
+97
+89
+12
+45
+98
+111
+42
+99
+98
+9
+71
+150
 */
 
           public static void main(String[] args) throws Exception {
@@ -16,7 +38,6 @@ public class JR_task_7_9_Play_in_Jolushka {
             ArrayList<Integer> last = new ArrayList<Integer>();
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
 
             for (int i = 0; i < 20; i++) {
                 main.add(i, Integer.parseInt(reader.readLine()));
