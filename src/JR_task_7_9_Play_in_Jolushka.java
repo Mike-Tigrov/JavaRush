@@ -78,6 +78,10 @@ public class JR_task_7_9_Play_in_Jolushka {
             }
 
             System.out.println("Остальные:");
+
+            for (Integer last_print : last) {
+                System.out.println(last_print);
+            }
         }
         public static void printList (ArrayList < Integer > list) {
             //напишите тут ваш код
