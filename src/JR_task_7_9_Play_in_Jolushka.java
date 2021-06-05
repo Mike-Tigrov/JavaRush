@@ -32,10 +32,10 @@ public class JR_task_7_9_Play_in_Jolushka {
 
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        ArrayList<Integer> main = new ArrayList<Integer>();
-        ArrayList<Integer> na3 = new ArrayList<Integer>();
-        ArrayList<Integer> na2 = new ArrayList<Integer>();
-        ArrayList<Integer> last = new ArrayList<Integer>();
+        ArrayList<Integer> main = new ArrayList<>();
+        ArrayList<Integer> na3 = new ArrayList<>();
+        ArrayList<Integer> na2 = new ArrayList<>();
+        ArrayList<Integer> last = new ArrayList<>();
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -45,6 +45,7 @@ public class JR_task_7_9_Play_in_Jolushka {
         }
 
         for (int i = 0; i < main.size(); i++) {
+
             if (main.get(i) % 3 == 0) {
                 na3.add(main.get(i));
             } else if (main.get(i) % 2 == 0) {
@@ -53,13 +54,9 @@ public class JR_task_7_9_Play_in_Jolushka {
                 last.add(main.get(i));
             }
         }
-            for (int i = 0; i < main.size(); i++) {
-                if (main.get(i) % 3 == 0 & main.get(i) % 2 == 0) {
-                    na3.add(main.get(i));
-                    na2.add(main.get(i));
-                }
-            }
 
+
+System.out.println("Главный список:");
 
             for (Integer main_print : main) {
                 System.out.println(main_print);
