@@ -39,13 +39,16 @@ public class JR_task_7_9_Play_in_Jolushka {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-
+// Добавили 20 чисел в основной список:
         for (int i = 0; i < 20; i++) {
             main.add(i, Integer.parseInt(reader.readLine()));
         }
 
         for (int i = 0; i < main.size(); i++) {
-
+            if (main.get(i) % 3 == 0 & main.get(i) % 2 == 0) {
+    na3.add(main.get(i));
+    na2.add(main.get(i));
+            }
             if (main.get(i) % 3 == 0) {
                 na3.add(main.get(i));
             } else if (main.get(i) % 2 == 0) {
