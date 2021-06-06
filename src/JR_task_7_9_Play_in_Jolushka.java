@@ -39,20 +39,23 @@ public class JR_task_7_9_Play_in_Jolushka {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-// Добавили 20 чисел в основной список:
+// Добавили 20 чисел в список main:
         for (int i = 0; i < 20; i++) {
             main.add(i, Integer.parseInt(reader.readLine()));
         }
-
+// Сортируем числа из списка main по 3 спискам:
         for (int i = 0; i < main.size(); i++) {
+            // Если делится на 3 и на 2, то добавляем в оба списка na3, na2:
             if (main.get(i) % 3 == 0 & main.get(i) % 2 == 0) {
     na3.add(main.get(i));
     na2.add(main.get(i));
-            }
-            if (main.get(i) % 3 == 0) {
+    // Если делится на 3, добавляем в na3:
+            } else if (main.get(i) % 3 == 0) {
                 na3.add(main.get(i));
+                // Если делится на 2, добавляем в na2:
             } else if (main.get(i) % 2 == 0) {
                 na2.add(main.get(i));
+                // Все остальные цифры добавляем в список last:
             } else {
                 last.add(main.get(i));
             }
@@ -83,8 +86,10 @@ System.out.println("Главный список:");
                 System.out.println(last_print);
             }
         }
-        public static void printList (ArrayList < Integer > list) {
+        public static void printList (ArrayList <Integer> list) {
             //напишите тут ваш код
-
+            for (int i = 0; i < list.size(); i++) {
+                System.out.println(list.get(i));
+            }
         }
     }
