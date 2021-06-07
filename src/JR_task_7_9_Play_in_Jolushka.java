@@ -39,6 +39,8 @@ public class JR_task_7_9_Play_in_Jolushka {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+
+
 // Добавили 20 чисел в список main:
         for (int i = 0; i < 20; i++) {
             main.add(i, Integer.parseInt(reader.readLine()));
@@ -87,7 +89,7 @@ System.out.println("Главный список:");
             }
         }
         public static void printList (ArrayList <Integer> list) {
-            //напишите тут ваш код
+
             for (int i = 0; i < list.size(); i++) {
                 System.out.println(list.get(i));
             }
