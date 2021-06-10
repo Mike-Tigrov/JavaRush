@@ -12,7 +12,6 @@ public class JR_task_23_Max_Bella_and_Jack {
             Dog dog3 = new Dog();
             dog3.name = "Jack";
 
-            //напишите тут ваш код
         }
 
         public static class Dog {
