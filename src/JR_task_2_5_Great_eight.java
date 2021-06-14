@@ -15,7 +15,7 @@ public class JR_task_2_5_Great_eight {
         Cat cat8 = new Cat();
         Cat cat9;
         Cat cat10;
-        //напишите тут ваш код
+
     }
 
     public static class Cat {
