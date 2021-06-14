@@ -7,6 +7,6 @@ public class JR_task_2_2_Piece_of_calculator {
             int a = 2;
             int b = 5;
             System.out.println(a+b);
-            System.out.println(a*b);//напишите тут ваш код
+            System.out.println(a*b);
         }
     }
