@@ -4,7 +4,7 @@ public class JR_task_2_5_Great_eight {
 */
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+
         Cat cat1 = new Cat();
         Cat cat2 = new Cat();
         Cat cat3 = new Cat();
