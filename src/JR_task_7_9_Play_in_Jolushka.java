@@ -31,7 +31,7 @@ public class JR_task_7_9_Play_in_Jolushka {
 */
 
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
         ArrayList<Integer> main = new ArrayList<>();
         ArrayList<Integer> na3 = new ArrayList<>();
         ArrayList<Integer> na2 = new ArrayList<>();
