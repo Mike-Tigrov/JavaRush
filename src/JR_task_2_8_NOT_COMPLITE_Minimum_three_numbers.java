@@ -1,4 +1,4 @@
-public class JR_task_2_8_Minimum_three_numbers {
+public class JR_task_2_8_NOT_COMPLITE_Minimum_three_numbers {
     /*
 Минимум трёх чисел
 */
