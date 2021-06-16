@@ -10,10 +10,10 @@ public class JR_task_2_8_NOT_COMPLITE_Minimum_three_numbers {
                 return a;
             } else if (b < a && b < c) {
                 return b;
-            } else if (c < a && c < b) {
+            } else {
                 return c;
             }
-        }
+         }
 
 
         public static void main(String[] args) {
