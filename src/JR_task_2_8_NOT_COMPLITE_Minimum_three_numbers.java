@@ -6,9 +6,9 @@ public class JR_task_2_8_NOT_COMPLITE_Minimum_three_numbers {
 // Не решена!
         public static int min(int a, int b, int c) {
             //напишите тут ваш код
-            if (a < b && a < c) {
+            if (a <= b && a <= c) {
                 return a;
-            } else if (b < a && b < c) {
+            } else if (b <= a && b <= c) {
                 return b;
             } else {
                 return c;
