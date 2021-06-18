@@ -8,7 +8,6 @@ public class JR_task_2_8_Minimum_four_numbers {
             int m4cd = min(c,d);
             int m4abcd = min(m4ab,m4cd);
             return m4abcd;
-
         }
 
         public static int min(int a, int b) {
@@ -16,8 +15,7 @@ public class JR_task_2_8_Minimum_four_numbers {
             if (a<b)
                 m2 = a;
             else m2 = b;
-            return m2;//напишите тут ваш код
-
+            return m2;
         }
 
         public static void main(String[] args) throws Exception {
