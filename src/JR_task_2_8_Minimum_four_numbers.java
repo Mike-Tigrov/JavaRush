@@ -9,8 +9,6 @@ public class JR_task_2_8_Minimum_four_numbers {
             int m4abcd = min(m4ab,m4cd);
             return m4abcd;
 
-            //напишите тут ваш код
-
         }
 
         public static int min(int a, int b) {
