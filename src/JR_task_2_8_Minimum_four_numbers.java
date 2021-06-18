@@ -12,7 +12,7 @@ public class JR_task_2_8_Minimum_four_numbers {
 
         public static int min(int a, int b) {
             int m2;
-            if (a<b)
+            if (a < b)
                 m2 = a;
             else m2 = b;
             return m2;
