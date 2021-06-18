@@ -3,8 +3,7 @@ public class JR_task_2_8_Minimum_four_numbers {
 Минимум четырех чисел
 */
 
-    public class Solution {
-        public static int min(int a, int b, int c, int d) {
+          public static int min(int a, int b, int c, int d) {
             int m4ab = min(a,b);
             int m4cd = min(c,d);
             int m4abcd = min(m4ab,m4cd);
