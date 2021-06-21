@@ -27,7 +27,7 @@ this.name = name;
 this.sex = sex;
 this.age = age;
         }
-
+// Создаём конструктор с полями имя, пол, возраст, наличие отца, наличие матери:
         public Human (String name, boolean sex, int age, Human father, Human mother) {
 this.name = name;
 this.sex = sex;
