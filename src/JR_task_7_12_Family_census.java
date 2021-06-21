@@ -2,16 +2,16 @@ public class JR_task_7_12_Family_census {
     public static void main(String[] args) {
 
         // Создаём дедушку Васю
-        Human Grandfather_Vasya = new Human();
+        Human Vasya = new Human();
 
         // Создаём дедушку Петю
-        Human Grandfather_Petya = new Human();
+        Human Petya = new Human();
 
         // Создаём бабушку Машу
-        Human Grandmother_Masha = new Human();
+        Human Masha = new Human();
 
         // Создаём бабушку Марусю
-        Human Grandmother_Marysya = new Human();
+        Human Marysya = new Human();
 
         // Создаём маму Вику, её папа - Вася, мама - Маша
         Human Vika = new Human();
