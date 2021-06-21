@@ -1,6 +1,6 @@
 public class JR_task_7_12_Family_census {
     public static void main(String[] args) {
-        // напишите тут ваш код
+
         // Создаём дедушку Васю:
         Human Grandfather_Vasya = new Human(Grandfather_Vasya.name,  );
         Human Grandfather_Petya = new Human(Grandfather_Petya.name, );
