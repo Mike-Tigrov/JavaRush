@@ -1,18 +1,22 @@
 public class JR_task_7_12_Family_census {
     public static void main(String[] args) {
 
-        // Создаём дедушку Васю:
-        Human Grandfather_Vasya = new Human(Grandfather_Vasya.name,  );
+        // Создаём дедушку Васю
+        Human Grandfather_Vasya = new Human();
 
-        // Создаём дедвшку Петю:
-        Human Grandfather_Petya = new Human(Grandfather_Petya.name, );
-        Human Grandmother_Masha = new Human(Grandmother_Masha.name, );
-        Human Grandmother_Marysya = new Human(Grandmother_Marysya.name, );
-        Human Mother = new Human(Mother.name);
-        Human Father = new Human(Father.name);
-        Human Sun_Max = new Human(Sun_Max.name,);
-        Human Sun_Vlad = new Human(Sun_Vlad.name,);
-        Human Doughter = new Human(Doughter.name,);
+        // Создаём дедушку Петю
+        Human Grandfather_Petya = new Human();
+
+        // Создаём бабушку Машу
+        Human Grandmother_Masha = new Human();
+
+        // Создаём бабушку Марусю
+        Human Grandmother_Marysya = new Human();
+        Human Mother = new Human();
+        Human Father = new Human();
+        Human Sun_Max = new Human();
+        Human Sun_Vlad = new Human();
+        Human Doughter = new Human();
     }
 // Создаём класс Человек с полями: имя, пол, возраст, наличие отца, матери:
     public static class Human {
