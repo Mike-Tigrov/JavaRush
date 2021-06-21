@@ -3,6 +3,8 @@ public class JR_task_7_12_Family_census {
 
         // Создаём дедушку Васю:
         Human Grandfather_Vasya = new Human(Grandfather_Vasya.name,  );
+
+        // Создаём дедвшку Петю:
         Human Grandfather_Petya = new Human(Grandfather_Petya.name, );
         Human Grandmother_Masha = new Human(Grandmother_Masha.name, );
         Human Grandmother_Marysya = new Human(Grandmother_Marysya.name, );
