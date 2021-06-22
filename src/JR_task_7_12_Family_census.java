@@ -3,8 +3,7 @@ import java.util.ArrayList;
 public class JR_task_7_12_Family_census {
     public static void main(String[] args) {
 
-        // Выводим всех на экран
-        System.out.println();
+        ArrayList<Human> humans = new ArrayList<Human>();
 
         // Создаём дедушку Васю
         Human Vasya = new Human("Вася", true, 73);
@@ -33,13 +32,24 @@ public class JR_task_7_12_Family_census {
         // Создаём дочь Ольгу, её папа Сергей, мама Вика
         Human Olga = new Human("Ольга", false, 11, Sergey.father, Vika.mother);
 
-        ArrayList<Human> Nine_Humans = new ArrayList<Human>();
-        Nine_Humans.add(Vasya);
-        Nine_Humans.add(Petya);
 
-        for (int i = 0; i < )
+        humans.add(Vasya);
+        humans.add(Petya);
+        humans.add(Masha);
+        humans.add(Marysya);
+        humans.add(Vika);
+        humans.add(Sergey);
+        humans.add(Max);
+        humans.add(Vlad);
+        humans.add(Olga);
+
+        for (int i = 0; i < humans.size(); i++) {
+            System.out.println(humans.get(i));
+        }
+
     }
-// Создаём класс Человек с полями: имя, пол, возраст, наличие отца, матери:
+
+    // Создаём класс Человек с полями: имя, пол, возраст, наличие отца, матери:
     public static class Human {
         // напишите тут ваш код
         String name;
@@ -48,21 +58,22 @@ public class JR_task_7_12_Family_census {
         Human father;
         Human mother;
 
-// Создаём конструктор с полями имя, пол и возраст:
-            public Human (String name, boolean sex, int age) {
-this.name = name;
-this.sex = sex;
-this.age = age;
+        // Создаём конструктор с полями имя, пол и возраст:
+        public Human(String name, boolean sex, int age) {
+            this.name = name;
+            this.sex = sex;
+            this.age = age;
         }
-// Создаём конструктор с полями имя, пол, возраст, наличие отца, наличие матери:
-        public Human (String name, boolean sex, int age, Human father, Human mother) {
-this.name = name;
-this.sex = sex;
-this.age = age;
-this.father = father;
-this.mother = mother;
+
+        // Создаём конструктор с полями имя, пол, возраст, наличие отца, наличие матери:
+        public Human(String name, boolean sex, int age, Human father, Human mother) {
+            this.name = name;
+            this.sex = sex;
+            this.age = age;
+            this.father = father;
+            this.mother = mother;
         }
-@Override
+
         public String toString() {
             String text = "";
             text += "Имя: " + this.name;
