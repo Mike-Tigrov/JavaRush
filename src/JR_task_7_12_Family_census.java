@@ -32,7 +32,6 @@ public class JR_task_7_12_Family_census {
         // Создаём дочь Ольгу, её папа Сергей, мама Вика
         Human Olga = new Human("Ольга", false, 11, Sergey.father, Vika.mother);
 
-
         humans.add(Vasya);
         humans.add(Petya);
         humans.add(Masha);
@@ -46,12 +45,10 @@ public class JR_task_7_12_Family_census {
         for (int i = 0; i < humans.size(); i++) {
             System.out.println(humans.get(i));
         }
-
     }
 
     // Создаём класс Человек с полями: имя, пол, возраст, наличие отца, матери:
     public static class Human {
-        // напишите тут ваш код
         String name;
         boolean sex;
         int age;
