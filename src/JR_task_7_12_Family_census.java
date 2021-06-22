@@ -70,7 +70,7 @@ public class JR_task_7_12_Family_census {
             this.father = father;
             this.mother = mother;
         }
-
+@Override
         public String toString() {
             String text = "";
             text += "Имя: " + this.name;
