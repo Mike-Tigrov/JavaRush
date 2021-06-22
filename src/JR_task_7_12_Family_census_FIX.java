@@ -1,6 +1,6 @@
 import java.util.ArrayList;
-
-public class JR_task_7_12_Family_census {
+// Выводит не все данные, хотя валидатор засчитал, решить вопрос!
+public class JR_task_7_12_Family_census_FIX {
     public static void main(String[] args) {
 
         ArrayList<Human> humans = new ArrayList<Human>();
