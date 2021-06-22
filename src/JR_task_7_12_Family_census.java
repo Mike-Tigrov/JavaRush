@@ -18,19 +18,19 @@ public class JR_task_7_12_Family_census {
         Human Marysya = new Human("бабушка Маруся", false, 67);
 
         // Создаём маму Вику, её папа - Вася, мама - Маша
-        Human Vika = new Human("Вика", false, 41, Vasya.father, Masha.mother);
+        Human Vika = new Human("мама Вика", false, 41, Vasya.father, Masha.mother);
 
         // Создаём папу Сергея, его папа - Петя, мама - Маруся
-        Human Sergey = new Human("Сергей", true, 42, Petya.father, Marysya.mother);
+        Human Sergey = new Human("папа Сергей", true, 42, Petya.father, Marysya.mother);
 
         // Создаём сына Максима, его папа - Сергей, мама - Вика
-        Human Max = new Human("Максим", true, 17, Sergey.father, Vika.mother);
+        Human Max = new Human("сын Максим", true, 17, Sergey.father, Vika.mother);
 
         // Создаём сына Влада, его папа - Сергей, мама - Вика
-        Human Vlad = new Human("Владислав", true, 14, Sergey.father, Vika.mother);
+        Human Vlad = new Human("сын Владислав", true, 14, Sergey.father, Vika.mother);
 
         // Создаём дочь Ольгу, её папа Сергей, мама Вика
-        Human Olga = new Human("Ольга", false, 11, Sergey.father, Vika.mother);
+        Human Olga = new Human("дочь Ольга", false, 11, Sergey.father, Vika.mother);
 
         humans.add(Vasya);
         humans.add(Petya);
