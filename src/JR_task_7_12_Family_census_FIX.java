@@ -6,16 +6,16 @@ public class JR_task_7_12_Family_census_FIX {
         ArrayList<Human> humans = new ArrayList<Human>();
 
         // Создаём дедушку Васю
-        Human Vasya = new Human("дедушка Вася", true, 73);
+        Human Vasya = new Human("дедушка Вася", true, 73, null, null);
 
         // Создаём дедушку Петю
-        Human Petya = new Human("дедушка Петя", true, 78);
+        Human Petya = new Human("дедушка Петя", true, 78, null, null);
 
         // Создаём бабушку Машу
-        Human Masha = new Human("бабушка Маша", false, 69);
+        Human Masha = new Human("бабушка Маша", false, 69, null, null);
 
         // Создаём бабушку Марусю
-        Human Marysya = new Human("бабушка Маруся", false, 67);
+        Human Marysya = new Human("бабушка Маруся", false, 67, null, null);
 
         // Создаём маму Вику, её папа - Вася, мама - Маша
         Human Vika = new Human("мама Вика", false, 41, Vasya.father, Masha.mother);
