@@ -4,8 +4,7 @@ public class JR_task_2_8_Print_thrice {
 */
 
         public static void print3(String text) {
-            System.out.print(text+" "+text+" "+text);//напишите тут ваш код
-
+            System.out.print(text+" "+text+" "+text);
         }
 
         public static void main(String[] args) {
