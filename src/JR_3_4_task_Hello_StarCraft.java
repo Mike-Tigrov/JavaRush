@@ -4,8 +4,7 @@ public class JR_3_4_task_Hello_StarCraft {
 Привет StarCraft!
 */
 
-    public class Solution {
-        public static void main(String[] args) {
+         public static void main(String[] args) {
             Zerg z1 = new Zerg();
             z1.name = "zz1";
             Zerg z2 = new Zerg();
@@ -32,10 +31,16 @@ public class JR_3_4_task_Hello_StarCraft {
             t3.name = " tt3";
             Terran t4 = new Terran();
             t4.name = "tt4";
-
         }
 
         public static class Zerg {
             public String name;
         }
+        public static class Protoss {
+             public String name;
+        }
+        public static class Terran {
+             public String name;
+        }
+
     }
