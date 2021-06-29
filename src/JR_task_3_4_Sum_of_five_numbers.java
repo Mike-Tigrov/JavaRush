@@ -1,9 +1,8 @@
-public class JR_3_4_task_Summ_of_five_numbers {
+public class JR_task_3_4_Sum_of_five_numbers {
 
 /*
 Сумма 5 чисел
 */
-
 
         public static void main(String[] args) {
             int i = 1;
@@ -16,6 +15,5 @@ public class JR_3_4_task_Summ_of_five_numbers {
             System.out.println(i);
             i = i + 5;
             System.out.println(i);
-
         }
     }
