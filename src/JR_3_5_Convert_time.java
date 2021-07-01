@@ -11,6 +11,6 @@ public class JR_3_5_Convert_time {
         } public static void main(String[] args) {
             System.out.println(convertToSeconds(24));
             System.out.println(convertToSeconds(1));
-
+System.out.println();
         }
     }
