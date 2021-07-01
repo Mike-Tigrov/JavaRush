@@ -6,7 +6,6 @@ public class JR_3_5_Convert_time {
 
         public static int convertToSeconds(int hour){
 
-
             return hour*60*60;
 
         } public static void main(String[] args) {
