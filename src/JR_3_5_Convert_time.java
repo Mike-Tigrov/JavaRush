@@ -5,8 +5,7 @@ public class JR_3_5_Convert_time {
 */
 
 
-        public static int convertToSeconds(int hour){//напишите тут ваш код
-
+        public static int convertToSeconds(int hour){
 
             return hour*60*60;
 
