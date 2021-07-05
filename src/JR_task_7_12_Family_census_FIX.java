@@ -32,6 +32,7 @@ public class JR_task_7_12_Family_census_FIX {
         // Создаём дочь Ольгу, её папа Сергей, мама Вика
         Human Olga = new Human("дочь Ольга", false, 11, Sergey.father, Vika.mother);
 
+        // Добавляем созданных людей
         humans.add(Vasya);
         humans.add(Petya);
         humans.add(Masha);
