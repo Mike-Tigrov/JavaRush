@@ -91,7 +91,7 @@ System.out.println("Главный список:");
             }
         }
         public static void printList (ArrayList <Integer> list) {
-
+// Выводим на печать 
             for (int i = 0; i < list.size(); i++) {
                 System.out.println(list.get(i));
             }
