@@ -47,7 +47,7 @@ public class JR_task_7_9_Play_in_Jolushka {
         for (int i = 0; i < 20; i++) {
             main.add(i, Integer.parseInt(reader.readLine()));
         }
-// Сортируем числа из списка main по 3 спискам:
+// Сортируем числа из списка main по 3 спискам (делятся на 3, на 2 и кратные 3 и 2 одновременно):
         for (int i = 0; i < main.size(); i++) {
             // Если делится на 3 и на 2, то добавляем в оба списка na3, na2:
             if (main.get(i) % 3 == 0 & main.get(i) % 2 == 0) {
