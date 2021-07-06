@@ -65,7 +65,7 @@ public class JR_task_7_9_Play_in_Jolushka {
             }
         }
 
-// Проверочные тесты по спискам:
+// Проверочные тесты по спискам (Главный список, в котором есть все 20 чисел):
 System.out.println("Главный список:");
 
             for (Integer main_print : main) {
