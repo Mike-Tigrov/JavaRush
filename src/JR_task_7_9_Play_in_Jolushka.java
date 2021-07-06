@@ -90,8 +90,9 @@ System.out.println("Главный список:");
                 System.out.println(last_print);
             }
         }
+    // Метод, который выводит список на печать: 
         public static void printList (ArrayList <Integer> list) {
-// Выводим на печать 
+
             for (int i = 0; i < list.size(); i++) {
                 System.out.println(list.get(i));
             }
