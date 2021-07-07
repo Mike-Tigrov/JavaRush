@@ -12,7 +12,7 @@ public class JR_task_3_5_Print_strings {
         public static void writeToConsole(String s)
         {
             System.out.print("printing: ");
-            System.out.println(s);//напишите тут ваш код
+            System.out.println(s);
         }
     }
 
