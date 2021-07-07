@@ -4,7 +4,6 @@ public class JR_task_3_5_Print_strings {
 Печатаем строки
 */
 
-    public class Solution {
         public static void main(String[] args) {
             writeToConsole("Hello world!");
         }
@@ -17,4 +16,4 @@ public class JR_task_3_5_Print_strings {
         }
     }
 
-}
+
