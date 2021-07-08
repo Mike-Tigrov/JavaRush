@@ -1,4 +1,4 @@
-public class JR_3_4_task_I_was_born_so_long_ago {
+public class JR_task_3_4_I_was_born_so_long_ago {
 
 /*
 Я так давно родился
