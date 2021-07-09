@@ -1,4 +1,4 @@
-public class JR_task_Multiplication_table {
+public class JR_task_3_6_Multiplication_table {
 
 /*
 Таблица умножения Ӏ Java Syntax: 3 уровень, 6 лекция
