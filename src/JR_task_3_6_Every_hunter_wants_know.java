@@ -31,4 +31,9 @@ public class JR_task_3_6_Every_hunter_wants_know {
             System.out.println("Yellow");
         }
     }
+    public static class Green {
+        public Green() {
+            System.out.println("Green");
+        }
+    }
 }
