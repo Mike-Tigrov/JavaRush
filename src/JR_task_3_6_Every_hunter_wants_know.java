@@ -11,8 +11,7 @@ public class JR_task_3_6_Every_hunter_wants_know {
         Green green = new Green();
         Blue blue = new Blue();
         Indigo indigo = new Indigo();
-        Violet violet = new Violet();//напишите тут ваш код
-
+        Violet violet = new Violet();
     }
 
     public static class Red {
@@ -35,5 +34,21 @@ public class JR_task_3_6_Every_hunter_wants_know {
         public Green() {
             System.out.println("Green");
         }
+    }
+    public static class Blue {
+        public Blue() {
+            System.out.println("Blue");
+        }
+    }
+    public static class Indigo {
+        public Indigo() {
+            System.out.println("Indigo");
+        }
+    }
+    public static class Violet {
+        public Violet () {
+            System.out.println("Violet");
+        }
+
     }
 }
