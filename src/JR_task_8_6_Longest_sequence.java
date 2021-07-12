@@ -23,7 +23,7 @@ Cамая длинная последовательность
 */
 
         public static void main(String[] args) throws IOException {
-
+// Создаём коллекцию - список строк:
             ArrayList<Integer> nums = new ArrayList<Integer>();
 
 
