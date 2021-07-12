@@ -11,7 +11,7 @@ Cамая длинная последовательность
 */
 
         public static void main(String[] args) throws IOException {
-            //напишите тут ваш код
+
             ArrayList<Integer> nums = new ArrayList<Integer>();
 
 
