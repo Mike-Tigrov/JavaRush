@@ -33,7 +33,10 @@ Cамая длинная последовательность
             for (int i = 0; i < 10; i++) {
                 nums.add(i, Integer.parseInt(reader.readLine()));
             }
-
+// Проверяем, что в список добавились все цифры:
+            for (int i = 0; i < nums.size(); i++) {
+                System.out.println(nums.get(i));
+            }
 
             int count1 = 0;
             int count2 = 0;
