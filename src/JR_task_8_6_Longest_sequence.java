@@ -8,6 +8,18 @@ public class JR_task_8_6_Longest_sequence {
 
 /*
 Cамая длинная последовательность
+
+Цифры для ввода:
+89
+12
+12
+98
+111
+42
+98
+98
+98
+71
 */
 
         public static void main(String[] args) throws IOException {
