@@ -16,6 +16,7 @@ Cамая длинная последовательность
 
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+// Заполняем коллекцию цифрами с клавиатуры:
 
             for (int i = 0; i < 10; i++) {
                 nums.add(i, Integer.parseInt(reader.readLine()));
