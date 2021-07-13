@@ -42,12 +42,7 @@ Cамая длинная последовательность
 
 // Создаём переменные для подсчёта последовательностей:
             int count1 = 0;
-            int count2 = 0;
-            int count3 = 0;
-
-            int index1 = 0;
-            int index2 = 0;
-            int index3 = 0;
+            int temp1 = 0;
 
             for (int i = 0; i < nums.size() - 1; i++) {
                 if (nums.get(i).equals(nums.get(i + 1))) {
