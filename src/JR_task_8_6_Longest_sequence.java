@@ -26,19 +26,21 @@ Cамая длинная последовательность
 // Создаём коллекцию - список строк:
             ArrayList<Integer> nums = new ArrayList<Integer>();
 
-
+// Для считывания с клавиатуры:
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-// Заполняем коллекцию цифрами с клавиатуры:
 
+// Заполняем коллекцию цифрами с клавиатуры:
             for (int i = 0; i < 10; i++) {
                 nums.add(i, Integer.parseInt(reader.readLine()));
             }
+
 // Проверяем, что в список добавились все цифры:
             for (int i = 0; i < nums.size(); i++) {
                 System.out.println(nums.get(i));
             }
             System.out.println();
 
+// Создаём переменные для подсчёта последовательностей:
             int count1 = 0;
             int count2 = 0;
             int count3 = 0;
@@ -48,7 +50,7 @@ Cамая длинная последовательность
             int index3 = 0;
 
             for (int i = 0; i < nums.size() - 1; i++) {
-                if (nums.get(i) == nums.get(i+1)) {
+                if (nums.get(i).equals(nums.get(i + 1))) {
                     count1++;
                     index1 = i;
                 }
