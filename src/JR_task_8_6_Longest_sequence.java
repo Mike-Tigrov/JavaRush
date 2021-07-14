@@ -50,15 +50,18 @@ Cамая длинная последовательность
                     max_count++;
 // Если два соседних элемента - разные, то мы проверяем длину последовательности "накопившуюся" в max_count:
                 } else if (max_count > count) {
-// Если накопилось больше чем было в count, то мы записываем в count
+// Если накопилось больше чем было в count,
+// то мы записываем в count новое значение из max_count
+// и сбрасываем max_count до 1:
+                    count = max_count;
+                    max_count = 1;
                 }
-                    index1 = i;
-                }
+                                    }
             }
 
-            System.out.println(count1);
-            System.out.println(index1);
-            System.out.println();
+            System.out.println(count);
+
+
 
             for (int i = index1 + 1; i < nums.size() - (1+i); i++) {
                 if (nums.get(i) == nums.get(i+1)) {
