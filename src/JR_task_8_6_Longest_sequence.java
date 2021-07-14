@@ -24,7 +24,7 @@ Cамая длинная последовательность
 
         public static void main(String[] args) throws IOException {
 // Создаём коллекцию - список строк:
-            ArrayList<Integer> nums = new ArrayList<Integer>();
+            List<Integer> nums = new ArrayList<>();
 
 // Для считывания с клавиатуры:
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -46,16 +46,19 @@ Cамая длинная последовательность
 
              for (int i = 0; i < nums.size() - 1; i++) {
                 if (nums.get(i).equals(nums.get(i + 1))) {
-//Если два соседних элемента одинаковы, то переменная увеличивается на 1:
+//Если два соседних элемента одинаковы, то max_count увеличивается на 1:
                     max_count++;
-// Если два соседних элемента - разные, то мы проверяем длину последовательности "накопившуюся" в max_count:
+// Если два соседних элемента - разные,
+// то мы проверяем длину последовательности "накопившуюся" в max_count:
                 } else if (max_count > count) {
 // Если накопилось больше чем было в count,
 // то мы записываем в count новое значение из max_count
 // и сбрасываем max_count до 1:
                     count = max_count;
                     max_count = 1;
-                }
+// Если накопилось меньше чем было, сбрасываем max_count до 1:
+                } else { max_count = 1; }
                                     }
+// Выводим на экран длину самой длинной последовательности:
             System.out.println(count);
             } }
