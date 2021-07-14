@@ -41,12 +41,16 @@ Cамая длинная последовательность
             System.out.println();
 
 // Создаём переменные для подсчёта последовательностей:
-            int count1 = 0;
-            int temp1 = 0;
+            int count = 1;
+            int max_count = 1;
 
-            for (int i = 0; i < nums.size() - 1; i++) {
+             for (int i = 0; i < nums.size() - 1; i++) {
                 if (nums.get(i).equals(nums.get(i + 1))) {
-                    count1++;
+//Если два соседних элемента одинаковы, то переменная увеличивается на 1:
+                    max_count++;
+                } else if (max_count > count) {
+
+                }
                     index1 = i;
                 }
             }
