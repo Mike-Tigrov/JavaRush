@@ -7,6 +7,8 @@ public class JR_38_Full_lenght_picture {
         System.out.println(getMetreFromCentimetre(243));
     }
 
+    public static int getMetreFromCentimetre(int centimetre) {
 
     }
 }
+
