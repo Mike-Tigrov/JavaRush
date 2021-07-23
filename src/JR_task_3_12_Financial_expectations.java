@@ -9,6 +9,8 @@ public class JR_task_3_12_Financial_expectations {
 
         public static void main(String[] args) throws Exception {
 BufferedReader reader = new BufferedReader (new InputStreamReader(System.in));
+int num = Integer.parseInt(reader.readLine());
 
+System.out.println("Я буду зарабатывать $" + num + " в час.");
         }
 }
