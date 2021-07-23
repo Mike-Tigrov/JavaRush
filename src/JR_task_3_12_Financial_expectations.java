@@ -8,6 +8,7 @@ public class JR_task_3_12_Financial_expectations {
 */
 
         public static void main(String[] args) throws Exception {
+BufferedReader reader = new BufferedReader (new InputStreamReader(System.in));
 
         }
 }
