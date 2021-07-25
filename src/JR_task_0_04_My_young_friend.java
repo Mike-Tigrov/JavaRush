@@ -2,7 +2,7 @@
 Мой юный друг
 */
 
-public class JR_task_0_4_My_young_friend {
+public class JR_task_0_04_My_young_friend {
 
     public static void main(String[] args) {
         int currentYear = 3126;

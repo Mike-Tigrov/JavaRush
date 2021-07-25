@@ -2,7 +2,7 @@
 Комментарии излишни
 */
 
-public class JR_task_0_8_Comments_are_superfluous {
+public class JR_task_0_08_Comments_are_superfluous {
     public static void main(String[] args) {
         int x = 2;
         int y = 12;
