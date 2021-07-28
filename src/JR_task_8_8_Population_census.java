@@ -8,7 +8,7 @@ public class JR_task_8_8_Population_census {
 */
 
         public static Map<String, String> createMap() {
-            //напишите тут ваш код
+
             Map <String, String> fio = new HashMap<>();
 
             fio.put("Петров", "Саша");
@@ -27,18 +27,20 @@ public class JR_task_8_8_Population_census {
             return fio;
         }
 
-        public static int getCountTheSameFirstName(Map<String, String> fio, String) {
-            //напишите тут ваш код
+        public static int getCountTheSameFirstName(Map<String, String> fio, String firstName) {
+            int countF = 0;
 
-                    return null;
+            return countF;
         }
 
         public static int getCountTheSameLastName(Map<String, String> map, String lastName) {
-            //напишите тут ваш код
-            return null;
+            int countL = 0;
+
+            return countL;
         }
 
         public static void main(String[] args) {
-
+            System.out.println (getCountTheSameFirstName (createMap(), "Сокол"));
+            System.out.println (getCountTheSameLastName (createMap(), "Саша"));
         }
 }
