@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class JR_task_8_8_Population_census {
+public class JR_task_08_08_Population_census {
 
 /*
 Перепись населения
