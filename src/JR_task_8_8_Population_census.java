@@ -27,16 +27,18 @@ public class JR_task_8_8_Population_census {
             return fio;
         }
 
-        public static int getCountTheSameFirstName(Map<String, String> fio, String firstName) {
-            int countF = 0;
+    public static int getCountTheSameFirstName(Map<String, String> fio, String firstName) {
 
-            return countF;
-        }
+        int countF = 0;
 
-        public static int getCountTheSameLastName(Map<String, String> map, String lastName) {
-            int countL = 0;
+        return countF;
+    }
 
-            return countL;
+    public static int getCountTheSameLastName(Map<String, String> fio, String lastName) {
+
+        int countL = 0;
+
+        return countL;
         }
 
         public static void main(String[] args) {
