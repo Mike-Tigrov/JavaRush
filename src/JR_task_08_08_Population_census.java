@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ArrayList;
 
 public class JR_task_08_08_Population_census {
 
@@ -29,9 +30,13 @@ public class JR_task_08_08_Population_census {
 
     public static int getCountTheSameFirstName(Map<String, String> fio, String firstName) {
 
-        int countF = 0;
+        // создаём массив, туда заносим фамилии из fio
+        ArrayList<String> nameLastKey = new ArrayList<>(fio.keySet());
+        int countLast = 0;
+        if (int i = 0; i < nameLastKey.size(); i++) {
+        }
 
-        return countF;
+        return countLast;
     }
 
     public static int getCountTheSameLastName(Map<String, String> fio, String lastName) {
