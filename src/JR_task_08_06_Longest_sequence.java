@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JR_task_8_6_Longest_sequence {
+public class JR_task_08_06_Longest_sequence {
 
 /*
 Cамая длинная последовательность

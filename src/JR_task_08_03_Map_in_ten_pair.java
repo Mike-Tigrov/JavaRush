@@ -3,7 +3,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 
-public class JR_task_8_3_Map_in_ten_pair {
+public class JR_task_08_03_Map_in_ten_pair {
 
 /*
 Map из 10 пар
