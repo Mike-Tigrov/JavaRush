@@ -2,7 +2,7 @@
 Поиск ошибок
 */
 
-public class JR_task_1_7_Search_for_errors {
+public class JR_task_01_07_Search_for_errors {
 
         public static void main(String[] args) {
             int a = 56;
