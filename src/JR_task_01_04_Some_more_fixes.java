@@ -2,7 +2,7 @@
 Еще немного исправлений
 */
 
-public class JR_task_1_4_Some_more_fixes 
+public class JR_task_01_04_Some_more_fixes
 {
 
         public static void main(String[] args) 

@@ -2,7 +2,7 @@
 Выводим квадрат числа
 */
 
-public class JR_task_1_03_Display_square_of_number {
+public class JR_task_01_03_Display_square_of_number {
 
         public static int number = 25;
 

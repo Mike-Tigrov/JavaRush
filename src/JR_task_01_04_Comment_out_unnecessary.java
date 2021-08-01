@@ -2,7 +2,7 @@
 Закомментируйте лишнее
 */
 
-public class JR_task_1_4_Comment_out_unnecessary {
+public class JR_task_01_04_Comment_out_unnecessary {
 
          public static void main(String[] args) {
             int a = 3;

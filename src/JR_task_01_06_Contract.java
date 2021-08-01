@@ -2,7 +2,7 @@
 Контракт
 */
 
-public class JR_task_1_6_Contract {
+public class JR_task_01_06_Contract {
 
         public static void main(String[] args) {
             System.out.println("Меня зовут Амиго.");

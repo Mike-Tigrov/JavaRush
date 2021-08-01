@@ -2,7 +2,7 @@
 Подойдет только 20
 */
 
-public class JR_task_1_4_Only_twenty_will_do {
+public class JR_task_01_04_Only_twenty_will_do {
 
         public static int a = 1;
         public static int b = 3;
