@@ -1,4 +1,4 @@
-public class JR_task_1_8_Favorite_poem {
+public class JR_task_01_08_Favorite_poem {
 /*
 Любимое стихотворение
 */
