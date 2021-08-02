@@ -1,4 +1,4 @@
-public class JR_task_2_1_Realize_method_print {
+public class JR_task_02_01_Realize_method_print {
     /*
 Реализуем метод print
 */
