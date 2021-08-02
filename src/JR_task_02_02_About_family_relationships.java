@@ -1,4 +1,4 @@
-public class JR_task_2_2_About_family_relationships {
+public class JR_task_02_02_About_family_relationships {
     /*
 О семейных отношениях
 */
