@@ -1,4 +1,4 @@
-public class JR_task_2_2_Count_circumference {
+public class JR_task_02_02_Count_circumference {
     /*
 Считаем длину окружности
 */
