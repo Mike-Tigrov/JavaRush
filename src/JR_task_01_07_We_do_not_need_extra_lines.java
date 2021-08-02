@@ -2,7 +2,7 @@
 Лишние строки нам не нужны
 */
 
-public class JR_task_1_7_We_do_not_need_extra_lines {
+public class JR_task_01_07_We_do_not_need_extra_lines {
 
          public static void main(String[] args) {
             int a = 10;
