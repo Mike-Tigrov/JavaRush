@@ -2,7 +2,7 @@
 Просто, как 2+2
 */
 
-public class JR_task_1_8_Simple_like_two_plus_two {
+public class JR_task_01_08_Simple_like_two_plus_two {
 
         public static void main(String[] args) {
             int a = 2, b = 2;
