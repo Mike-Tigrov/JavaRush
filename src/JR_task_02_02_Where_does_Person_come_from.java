@@ -1,4 +1,4 @@
-public class JR_task_2_2_Where_does_Person_come_from {
+public class JR_task_02_02_Where_does_Person_come_from {
     /*
 Откуда берутся Person?
 */
