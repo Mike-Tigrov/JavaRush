@@ -1,4 +1,4 @@
-public class JR_task_2_2_Salary_increase {
+public class JR_task_02_02_Salary_increase {
     /*
 Прибавка к зарплате
 */
