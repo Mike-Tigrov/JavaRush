@@ -1,4 +1,4 @@
-public class JR_task_2_2_Our_first_converter {
+public class JR_task_02_02_Our_first_converter {
     /*
 Наш первый конвертер!
 */
