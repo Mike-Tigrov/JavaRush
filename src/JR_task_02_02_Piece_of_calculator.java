@@ -1,4 +1,4 @@
-public class JR_task_2_2_Piece_of_calculator {
+public class JR_task_02_02_Piece_of_calculator {
     /*
 Кусочек калькулятора
 */
