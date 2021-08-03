@@ -1,4 +1,4 @@
-public class JR_task_2_3_Biased_reality {
+public class JR_task_02_03_Biased_reality {
     /*
 Необъективная реальность
 */
