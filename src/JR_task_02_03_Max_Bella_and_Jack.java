@@ -1,4 +1,4 @@
-public class JR_task_2_3_Max_Bella_and_Jack {
+public class JR_task_02_03_Max_Bella_and_Jack {
     /*
 Макс, Белла и Джек
 */
