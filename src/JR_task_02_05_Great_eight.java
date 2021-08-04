@@ -1,4 +1,4 @@
-public class JR_task_2_5_Great_eight {
+public class JR_task_02_05_Great_eight {
 /*
 Великолепная восьмерка
 */
