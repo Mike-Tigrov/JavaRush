@@ -1,4 +1,4 @@
-public class JR_task_2_8_Minimum_two_numbers {
+public class JR_task_02_08_Minimum_two_numbers {
     /*
 Минимум двух чисел Ӏ Java Syntax: 2 уровень, 8 лекция 7
 */
