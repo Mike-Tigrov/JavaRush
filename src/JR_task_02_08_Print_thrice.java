@@ -1,4 +1,4 @@
-public class JR_task_2_8_Print_thrice {
+public class JR_task_02_08_Print_thrice {
     /*
 Печатаем трижды
 */
