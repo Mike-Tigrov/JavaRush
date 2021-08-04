@@ -1,4 +1,4 @@
-public class JR_task_2_5_Most_needed_number {
+public class JR_task_02_05_Most_needed_number {
 
     /*
 Самое нужное число
