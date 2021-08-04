@@ -1,4 +1,4 @@
-public class JR_task_2_5_Pets_need_people {
+public class JR_task_02_05_Pets_need_people {
     /*
 Питомцам нужны люди
 */
