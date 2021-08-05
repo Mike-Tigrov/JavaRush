@@ -1,4 +1,4 @@
-public class JR_task_3_4_Hello_StarCraft {
+public class JR_task_03_04_Hello_StarCraft {
 
 /*
 Привет StarCraft!
