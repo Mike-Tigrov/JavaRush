@@ -1,4 +1,4 @@
-public class JR_task_2_8_Repetition_mother {
+public class JR_task_02_08_Repetition_mother {
     /*
 Повторенье-мать
 */
