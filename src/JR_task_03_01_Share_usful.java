@@ -1,4 +1,4 @@
-public class JR_task_3_01_Share_usful {
+public class JR_task_03_01_Share_usful {
     /*
 Делиться полезно
 */
