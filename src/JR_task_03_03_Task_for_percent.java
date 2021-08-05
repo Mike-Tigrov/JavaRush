@@ -1,4 +1,4 @@
-public class JR_task_3_3_Task_for_percent {
+public class JR_task_03_03_Task_for_percent {
         /*
 Задача на проценты
 */
