@@ -1,4 +1,4 @@
-public class JR_task_3_3_Immidiately_to_print {
+public class JR_task_03_03_Immidiately_to_print {
 /*
 Немедленно в печать
 */
