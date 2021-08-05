@@ -1,4 +1,4 @@
-public class JR_task_3_3_Currency_exchange {
+public class JR_task_03_03_Currency_exchange {
 
     /*
 Обмен валют
