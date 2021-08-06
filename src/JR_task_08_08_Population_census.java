@@ -47,8 +47,9 @@ public class JR_task_08_08_Population_census {
         ArrayList<String> nameLastKey = new ArrayList<>(fio.keySet());
         int countLast = 0;
         for (int i = 0; i < nameLastKey.size(); i++) {
-            if (key.get(i).equals(
-                    countLast++
+            if (key.get(i).equals(lastName) {
+                countLast++
+            }
         }
 
         return countL;
