@@ -30,18 +30,26 @@ public class JR_task_08_08_Population_census {
 
     public static int getCountTheSameFirstName(Map<String, String> fio, String firstName) {
 
-        // создаём массив, туда заносим фамилии из fio
-        ArrayList<String> nameLastKey = new ArrayList<>(fio.keySet());
-        int countLast = 0;
-        if (int i = 0; i < nameLastKey.size(); i++) {
+// создаём массив, заносим имена из fio
+        ArrayList<String> nameFirstValue = new ArrayList<>(fio.values());
+
+        int countF = 0;
+
+        for (int i = 0; i < nameFirstValue.size(); i++) {
+
         }
 
-        return countLast;
+        return countF;
     }
 
     public static int getCountTheSameLastName(Map<String, String> fio, String lastName) {
-
-        int countL = 0;
+// создаём массив, туда заносим фамилии из fio
+        ArrayList<String> nameLastKey = new ArrayList<>(fio.keySet());
+        int countLast = 0;
+        for (int i = 0; i < nameLastKey.size(); i++) {
+            if (key.get(i).equals(
+                    countLast++
+        }
 
         return countL;
         }
