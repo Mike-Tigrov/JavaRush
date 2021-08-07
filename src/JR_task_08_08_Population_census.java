@@ -19,11 +19,11 @@ public class JR_task_08_08_Population_census {
             fio.put("Керо", "Маша");
             fio.put("Сокол", "Сергей");
             fio.put("Колчин", "Владислав");
-            fio.put("Громов", "Анатолий");
+            fio.put("Громов", "Саша");
 
             fio.put("Забелин", "Сергей");
             fio.put("Пиро", "Нина");
-            fio.put("Валов", "Роман");
+            fio.put("Валов", "Саша");
 
             return fio;
         }
@@ -33,13 +33,15 @@ public class JR_task_08_08_Population_census {
 // создаём массив, заносим имена из fio
         ArrayList<String> nameFirstValue = new ArrayList<>(fio.values());
 
-        int countF = 0;
+        int countFirst = 0;
 
         for (int i = 0; i < nameFirstValue.size(); i++) {
-
+if (nameFirstValue.get(i).equals(firstName)) {
+    countFirst++;
+}
         }
 
-        return countF;
+        return countFirst;
     }
 
     public static int getCountTheSameLastName(Map<String, String> fio, String lastName) {
@@ -47,16 +49,16 @@ public class JR_task_08_08_Population_census {
         ArrayList<String> nameLastKey = new ArrayList<>(fio.keySet());
         int countLast = 0;
         for (int i = 0; i < nameLastKey.size(); i++) {
-            if (key.get(i).equals(lastName) {
-                countLast++
+            if (nameLastKey.get(i).equals(lastName)) {
+                countLast++;
             }
         }
 
-        return countL;
+        return countLast;
         }
 
         public static void main(String[] args) {
-            System.out.println (getCountTheSameFirstName (createMap(), "Сокол"));
-            System.out.println (getCountTheSameLastName (createMap(), "Саша"));
+            System.out.println (getCountTheSameFirstName (createMap(), "Саша"));
+            System.out.println (getCountTheSameLastName (createMap(), "Сокол"));
         }
 }
