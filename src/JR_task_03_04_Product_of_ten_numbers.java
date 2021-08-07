@@ -1,4 +1,4 @@
-public class JR_task_3_4_Product_of_ten_numbers {
+public class JR_task_03_04_Product_of_ten_numbers {
 
 /*
 Произведение 10 чисел

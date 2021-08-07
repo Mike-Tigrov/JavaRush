@@ -45,7 +45,7 @@ if (nameFirstValue.get(i).equals(firstName)) {
     }
 
     public static int getCountTheSameLastName(Map<String, String> fio, String lastName) {
-// создаём массив, туда заносим фамилии из fio
+// создаём массив, заносим фамилии из fio
         ArrayList<String> nameLastKey = new ArrayList<>(fio.keySet());
         int countLast = 0;
         for (int i = 0; i < nameLastKey.size(); i++) {
