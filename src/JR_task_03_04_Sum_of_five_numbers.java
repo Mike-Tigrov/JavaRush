@@ -1,4 +1,4 @@
-public class JR_task_3_4_Sum_of_five_numbers {
+public class JR_task_03_04_Sum_of_five_numbers {
 
 /*
 Сумма 5 чисел
