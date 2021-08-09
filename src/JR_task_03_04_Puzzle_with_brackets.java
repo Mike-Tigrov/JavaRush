@@ -1,4 +1,4 @@
-public class JR_task_3_4_Puzzle_with_brackets {
+public class JR_task_03_04_Puzzle_with_brackets {
 
 /*
 Головоломка со скобками
