@@ -1,4 +1,4 @@
-public class JR_task_3_5_Convert_time {
+public class JR_task_03_05_Convert_time {
 
 /*
 Конвертируем время
