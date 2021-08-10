@@ -1,4 +1,4 @@
-public class JR_task_3_5_Collect_water_in_the_pool {
+public class JR_task_03_05_Collect_water_in_the_pool {
 
 /*
 Набираем воду в бассейн
