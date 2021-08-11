@@ -1,4 +1,4 @@
-public class JR_task_0_01_Amigo_very_smart {
+public class JR_task_00_01_Amigo_very_smart {
 /*
 Амиго очень умный
 */
