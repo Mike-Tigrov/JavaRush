@@ -1,4 +1,4 @@
-public class JR_task_0_03_I_think_be_a_programmer_is_cool {
+public class JR_task_00_03_I_think_be_a_programmer_is_cool {
 
     /*
     Я думаю, быть программистом - это круто
