@@ -2,7 +2,7 @@
 2 + 3 = 5
 */
 
-public class JR_task_0_08_Two_plus_three_equals_five {
+public class JR_task_00_08_Two_plus_three_equals_five {
 
         public static void main(String[] args) {
             int a = 3;
