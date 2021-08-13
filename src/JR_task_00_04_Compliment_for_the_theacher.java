@@ -1,4 +1,4 @@
-public class JR_task_0_04_Compliment_for_the_theacher {
+public class JR_task_00_04_Compliment_for_the_theacher {
 
     /*
     Комплимент учителю
