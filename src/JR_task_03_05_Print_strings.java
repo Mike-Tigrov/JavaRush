@@ -1,4 +1,4 @@
-public class JR_task_3_5_Print_strings {
+public class JR_task_03_05_Print_strings {
 
 /*
 Печатаем строки
