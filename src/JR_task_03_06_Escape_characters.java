@@ -1,4 +1,4 @@
-public class JR_task_3_6_Escape_characters {
+public class JR_task_03_06_Escape_characters {
 
 /*
 Экранирование символов
