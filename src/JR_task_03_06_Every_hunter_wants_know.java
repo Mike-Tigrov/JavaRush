@@ -1,4 +1,4 @@
-public class JR_task_3_6_Every_hunter_wants_know {
+public class JR_task_03_06_Every_hunter_wants_know {
 
 /*
 Каждый охотник желает знать…
