@@ -21,6 +21,10 @@ public class JR_task_08_08_Only_for_the_rich {
                 rich.put("Петренко", 490);
                 rich.put("Куценко", 600);
                 rich.put("Соколов", 700);
+
+                rich.put("Борисов", 800);
+                rich.put("Сизонов", 900);
+                rich.put("Воронов", 970);
         }
 
         public static void removeItemFromMap(Map<String, Integer> map) {
