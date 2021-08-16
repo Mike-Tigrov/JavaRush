@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ArrayList;
 
 public class JR_task_08_08_Only_for_the_rich {
 
