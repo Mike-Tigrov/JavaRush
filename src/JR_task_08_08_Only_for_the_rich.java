@@ -12,6 +12,15 @@ public class JR_task_08_08_Only_for_the_rich {
                 // создаём список пар Фамилия - зарплата
 
                 Map<String, Integer> rich = new HashMap<>();
+
+                rich.put("Петров", 100);
+                rich.put("Иванов", 200);
+                rich.put("Сидоров", 300);
+                rich.put("Смирнов", 400);
+
+                rich.put("Петренко", 490);
+                rich.put("Куценко", 600);
+                rich.put("Соколов", 700);
         }
 
         public static void removeItemFromMap(Map<String, Integer> map) {
