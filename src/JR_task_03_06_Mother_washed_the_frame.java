@@ -1,4 +1,4 @@
-public class JR_task_3_6_Mother_washed_the_frame {
+public class JR_task_03_06_Mother_washed_the_frame {
 
 /*
 Мама мыла раму
