@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class JR_task_3_08_Big_and_clean {
+public class JR_task_03_08_Big_and_clean {
 
     /*
  Большая и чистая
