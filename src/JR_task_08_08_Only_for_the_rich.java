@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.ArrayList;
+import java.util.Set;
 
 public class JR_task_08_08_Only_for_the_rich {
 
@@ -28,6 +29,8 @@ public class JR_task_08_08_Only_for_the_rich {
 
                 return rich;
         }
+
+        Set<Map.Entry<String, Integer>> set = createMap().entrySet();
 
         public static void removeItemFromMap(Map<String, Integer> map) {
             // код
