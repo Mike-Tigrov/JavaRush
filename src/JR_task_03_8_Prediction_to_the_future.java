@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class JR_task_3_8_Prediction_to_the_future {
+public class JR_task_03_8_Prediction_to_the_future {
 
 /*
 Предсказание на будущее
