@@ -1,4 +1,4 @@
-public class JR_task_03_6_Way_of_the_Samurai {
+public class JR_task_03_06_Way_of_the_Samurai {
     /*
 Путь самурая
 */

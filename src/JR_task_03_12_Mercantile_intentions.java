@@ -1,4 +1,4 @@
-public class JR_task_3_12_Mercantile_intentions {
+public class JR_task_03_12_Mercantile_intentions {
 
 /*
 Меркантильные намерения
