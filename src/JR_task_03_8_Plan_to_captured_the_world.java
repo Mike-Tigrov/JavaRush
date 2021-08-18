@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class JR_task_3_8_Plan_to_captured_the_world {
+public class JR_task_03_8_Plan_to_captured_the_world {
 
 /*
 План по захвату мира
