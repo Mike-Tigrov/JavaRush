@@ -1,4 +1,4 @@
-public class JR_task_03_8_Full_lenght_picture {
+public class JR_task_03_08_Full_lenght_picture {
 
     /*
 Полнометражная картина
