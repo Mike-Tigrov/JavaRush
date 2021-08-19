@@ -20,7 +20,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class JR_task_6_11_Family_connexion_cats {
+public class JR_task_06_11_Family_connexion_cats {
 
         public static void main(String[] args) throws IOException {
 
