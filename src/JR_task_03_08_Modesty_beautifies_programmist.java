@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class JR_task_03_8_Modesty_beautifies_programmist {
+public class JR_task_03_08_Modesty_beautifies_programmist {
 
 /*
 Скромность украшает программиста
