@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class JR_task_7_9_Check_orderliness {
+public class JR_task_07_9_Check_orderliness {
 
 /*
 Проверка на упорядоченность
