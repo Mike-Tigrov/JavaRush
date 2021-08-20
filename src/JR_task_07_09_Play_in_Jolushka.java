@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class JR_task_07_9_Play_in_Jolushka {
+public class JR_task_07_09_Play_in_Jolushka {
 
 /*
 Играем в Jолушку
