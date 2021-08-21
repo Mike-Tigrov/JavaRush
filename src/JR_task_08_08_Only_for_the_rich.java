@@ -13,6 +13,7 @@ public class JR_task_08_08_Only_for_the_rich {
                 // создаём список пар Фамилия - зарплата
 
                 Map<String, Integer> rich = new HashMap<>();
+// заполняем список пар
 
                 rich.put("Петров", 100);
                 rich.put("Иванов", 200);
@@ -37,7 +38,7 @@ public class JR_task_08_08_Only_for_the_rich {
         }
 
         public static void removeItemFromMap(Map<String, Integer> map) {
-            // код
+            // нам надо пройтись циклом по коллекции, найти значения менее 500 и удалить их из коллекции
         }
 
         public static void main(String[] args) {
