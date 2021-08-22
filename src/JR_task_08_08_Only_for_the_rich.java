@@ -32,7 +32,7 @@ public class JR_task_08_08_Only_for_the_rich {
         }
 
         Set<Map.Entry<String, Integer>> set = createMap().entrySet();
-
+/*
         for (Map.Entry<String, Integer> prints : set ) {
                 System.out.println(prints.getKey() + " : " + prints.getValue());
         }
@@ -40,7 +40,7 @@ public class JR_task_08_08_Only_for_the_rich {
         public static void removeItemFromMap(Map<String, Integer> map) {
             // нам надо пройтись циклом по коллекции, найти значения менее 500 и удалить их из коллекции
         }
-
+*/
         public static void main(String[] args) {
 
         }
