@@ -3,7 +3,9 @@ public class JR_task_3_12_Sum_of_three_threeDigit_numbers {
 Сумма цифр трехзначного числа
 */
 
-            public static void main(String[] args) {
+            public static void main(String[] args)
+
+            {
             System.out.println(sumDigitsInNumber(546));
         }
 
