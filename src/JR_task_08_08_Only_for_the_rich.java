@@ -31,16 +31,12 @@ public class JR_task_08_08_Only_for_the_rich {
                 return rich;
         }
 
-        Set<Map.Entry<String, Integer>> set = createMap().entrySet();
-/*
-        for (Map.Entry<String, Integer> prints : set ) {
-                System.out.println(prints.getKey() + " : " + prints.getValue());
-        }
+         public static void removeItemFromMap(Map<String, Integer> map) {
+// Создаём копию коллекции, чтобы по ней проходить циклом
 
-        public static void removeItemFromMap(Map<String, Integer> map) {
-            // нам надо пройтись циклом по коллекции, найти значения менее 500 и удалить их из коллекции
+                Map<String, Integer> rich_copy = new HashMap<>(createMap());
+
         }
-*/
         public static void main(String[] args) {
 
         }
