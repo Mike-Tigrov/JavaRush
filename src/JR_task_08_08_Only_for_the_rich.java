@@ -37,7 +37,7 @@ public class JR_task_08_08_Only_for_the_rich {
                 Map<String, Integer> rich_copy = new HashMap<>(createMap());
 
                 // Создаём список и заносим туда значения из коллекции
-ArrayList<Integer>
+ArrayList<Integer> salary = new ArrayList<>();
         }
         public static void main(String[] args) {
 
