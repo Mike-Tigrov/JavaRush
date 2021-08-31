@@ -8,5 +8,6 @@ public static void main(String[] args) {
     person.adjustAge(person.age);
     System.out.println("Adjusted age is: " + person.age);
 }
-
-}
+    public static class Person {
+        public int age = 20;
+    }
