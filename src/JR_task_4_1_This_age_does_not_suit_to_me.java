@@ -10,4 +10,6 @@ public static void main(String[] args) {
 }
     public static class Person {
         public int age = 20;
+
+        public void adjustAge(int age) {
     }
