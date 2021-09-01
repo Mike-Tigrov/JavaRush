@@ -13,4 +13,8 @@ public static void main(String[] args) {
     public static class Apple {
         public static int applesPrice = 0;
         public static void addPrice(int applesPrice) {
+            Apple.applesPrice =  Apple.applesPrice + applesPrice;
+
         }
+    }
+
