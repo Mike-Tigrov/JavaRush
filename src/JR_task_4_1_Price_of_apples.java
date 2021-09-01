@@ -10,4 +10,6 @@ public static void main(String[] args) {
     apple2.addPrice(100);
     System.out.println("Стоимость яблок " + Apple.applesPrice);
 }
-}
+    public static class Apple {
+        public static int applesPrice = 0;
+    }
