@@ -1,4 +1,4 @@
-public class JR_task_04_1_Price_of_apples {
+public class JR_task_04_01_Price_of_apples {
 
     /*
     Цена яблок
