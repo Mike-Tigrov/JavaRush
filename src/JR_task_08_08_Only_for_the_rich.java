@@ -40,6 +40,7 @@ public class JR_task_08_08_Only_for_the_rich {
 ArrayList<Integer> salary = new ArrayList<>();
         }
         public static void main(String[] args) {
-
+        //Проверка:
+                        System.out.println(createMap());
         }
 }
