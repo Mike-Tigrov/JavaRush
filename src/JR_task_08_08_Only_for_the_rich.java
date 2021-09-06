@@ -39,6 +39,7 @@ public class JR_task_08_08_Only_for_the_rich {
 
                 // Создаём список и заносим туда значения заработных плат из коллекции
                  // Далее будем идти по созданному списку (листу)
+                 // Проверять соответствие условию
 ArrayList<Integer> salary = new ArrayList<>();
         }
         public static void main(String[] args) {
