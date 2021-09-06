@@ -33,10 +33,11 @@ public class JR_task_08_08_Only_for_the_rich {
 
          public static void removeItemFromMap(Map<String, Integer> map) {
 // Создаём копию коллекции, чтобы по ней проходить циклом
+                 //
 
                 Map<String, Integer> rich_copy = new HashMap<>(createMap());
 
-                // Создаём список и заносим туда значения из коллекции
+                // Создаём список и заносим туда значения заработных плат из коллекции
 ArrayList<Integer> salary = new ArrayList<>();
         }
         public static void main(String[] args) {
