@@ -41,6 +41,7 @@ public class JR_task_08_08_Only_for_the_rich {
                  // Далее будем идти по созданному списку (листу)
                  // Проверять соответствие условию, чтобы цифра из value была меньше 500
       // Если меньше 500, то удаляем строку (ключ-значение) из коллекции
+                 // Мы идём по копии коллекции или по ArrayList?
 ArrayList<Integer> salary = new ArrayList<>();
         }
         public static void main(String[] args) {
