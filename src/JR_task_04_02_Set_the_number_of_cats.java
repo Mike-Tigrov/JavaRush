@@ -1,4 +1,4 @@
-public class JR_t_04_02_Set_the_number_of_cats {
+public class JR_task_04_02_Set_the_number_of_cats {
 /*
 Задаем количество котов
 */
@@ -6,8 +6,8 @@ public class JR_t_04_02_Set_the_number_of_cats {
     private static int catsCount = 0;
 
     public static void setCatsCount(int catsCount) {
-        //напишите тут ваш код
-        JR_t_04_02_Set_the_number_of_cats.catsCount += catsCount;
+
+        JR_task_04_02_Set_the_number_of_cats.catsCount += catsCount;
     }
 
     public static void main(String[] args) {
