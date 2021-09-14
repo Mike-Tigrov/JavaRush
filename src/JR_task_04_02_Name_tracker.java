@@ -8,6 +8,7 @@ public class JR_task_04_02_Name_tracker {
 Требование:
 1. Класс Cat должен содержать только одну переменную fullName.
 2. Переменная FullName должна иметь модификатор доступа private и тип String.
+3. Класс Cat должен содержать только два метода setName и main.
 */
     private String fullName;
 
