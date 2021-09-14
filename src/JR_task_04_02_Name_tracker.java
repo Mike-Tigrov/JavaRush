@@ -1,6 +1,8 @@
 public class JR_task_04_02_Name_tracker {
     /*
 Программа учета имен
+Условие:
+1.
 */
     private String fullName;
 
