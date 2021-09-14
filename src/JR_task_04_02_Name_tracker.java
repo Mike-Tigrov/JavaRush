@@ -1,8 +1,13 @@
 public class JR_task_04_02_Name_tracker {
     /*
 Программа учета имен
+
 Условие:
 1.
+
+Требование:
+1. Класс Cat должен содержать только одну переменную fullName.
+2. Переменная FullName должна иметь модификатор доступа private и тип String.
 */
     private String fullName;
 
