@@ -1,4 +1,4 @@
-public class JR_task_4_2_Name_tracker {
+public class JR_task_04_2_Name_tracker {
     /*
 Программа учета имен
 */
