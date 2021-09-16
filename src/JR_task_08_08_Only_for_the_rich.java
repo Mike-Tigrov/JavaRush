@@ -35,7 +35,7 @@ public class JR_task_08_08_Only_for_the_rich {
          public static void removeItemFromMap(Map<String, Integer> map) {
 
 
-                 Iterator<Map.Entry<String, Integer> salary = map entrySet();iterator();
+                 Iterator<Map.Entry<String, Integer> salary = map.entrySet().iterator();
 
 
 
