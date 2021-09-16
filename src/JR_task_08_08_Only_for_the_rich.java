@@ -33,17 +33,12 @@ public class JR_task_08_08_Only_for_the_rich {
         }
 
          public static void removeItemFromMap(Map<String, Integer> map) {
-// Создаём копию коллекции, чтобы по ней проходить циклом
-                 //
 
-                Map<String, Integer> rich_copy = new HashMap<>(createMap());
 
-                // Создаём список и заносим туда значения заработных плат из коллекции
-                 // Далее будем идти по созданному списку (листу)
-                 // Проверять соответствие условию, чтобы цифра из value была меньше 500
-      // Если меньше 500, то удаляем строку (ключ-значение) из коллекции
-                 // Мы идём по копии коллекции или по ArrayList?
-ArrayList<Integer> salary = new ArrayList<>();
+                 Iterator<Map.Entry<String, Integer> salary = map entrySet();iterator();
+
+
+
         }
         public static void main(String[] args) {
         //Проверка созданной коллекции:
