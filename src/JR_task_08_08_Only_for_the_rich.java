@@ -32,11 +32,14 @@ public class JR_task_08_08_Only_for_the_rich {
                 return rich;
         }
 
-         public static void removeItemFromMap(Map<String, Integer> map) {
+         public static void removeItemFromMap(Map<String, Integer> rich) {
 
 
-                 Iterator<Map.Entry<String, Integer> salary = map.entrySet().iterator();
+                 Iterator<Map.Entry<String, Integer> salary = rich.entrySet().iterator();
 
+                 for (int i = 0; i < rich.size(); i++) {
+                         Map.
+                 }
 
 
         }
