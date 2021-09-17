@@ -37,9 +37,9 @@ public class JR_task_08_08_Only_for_the_rich {
 
                  Iterator<Map.Entry<String, Integer> salary = rich.entrySet().iterator();
 
-                 for (int i = 0; i < rich.size(); i++) {
+                 while (salary.hasNext()) {
                          Map.Entry<String, Integer> entry = salary.next();
-                         while (salary.hasNext())
+                        if(entry.getValue() < 500)
                          {
 
                          }
