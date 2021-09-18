@@ -21,19 +21,14 @@ String, Integer состоящих из 10 записей по принципу 
 4. Метод removeItemFromMap() должен удалять из словаря всех людей,
 у которых зарплата ниже 500.
 
-
 */
 
-
-
-
-
         public static Map<String, Integer> createMap() {
+
                 // создаём список пар Фамилия - зарплата
-
                 Map<String, Integer> rich = new HashMap<>();
-// заполняем список пар
 
+// заполняем список пар
                 rich.put("Петров", 100);
                 rich.put("Иванов", 200);
                 rich.put("Сидоров", 300);
@@ -52,12 +47,17 @@ String, Integer состоящих из 10 записей по принципу 
 
          public static void removeItemFromMap(Map<String, Integer> rich) {
 
-
                  Iterator<Map.Entry<String, Integer>> salary = rich.entrySet().iterator();
 
                  while (salary.hasNext()) {
-                         Map.Entry<String, Integer> entry = salary.next();
-                        if(entry.getValue() < 500)
+                         Map.Entry<String, Integer> temp = salary.next();
+                         String name = temp.getKey();
+                         Integer value = temp.getValue();
+                        if(value < 500) {
+                                temp.remove();
+                        }
+                        }
+
                          {
 
                          }
