@@ -1,7 +1,5 @@
 import java.util.HashMap;
 import java.util.Map;
-import java.util.ArrayList;
-import java.util.Set;
 import java.util.Iterator;
 
 public class JR_task_08_08_Only_for_the_rich {
@@ -50,23 +48,16 @@ String, Integer состоящих из 10 записей по принципу 
                  Iterator<Map.Entry<String, Integer>> salary = rich.entrySet().iterator();
 
                  while (salary.hasNext()) {
-                         Map.Entry<String, Integer> temp = salary.next();
-                         String name = temp.getKey();
-                         Integer value = temp.getValue();
+                        Map.Entry<String, Integer> temp = salary.next();
+                        Integer value = temp.getValue();
                         if(value < 500) {
-                                temp.remove();
+                                salary.remove();
                         }
+
                         }
 
-                         {
-
-                         }
-                 }
-
-
-        }
+                                        }
         public static void main(String[] args) {
-        //Проверка созданной коллекции:
-                        System.out.println(createMap());
+
         }
 }
