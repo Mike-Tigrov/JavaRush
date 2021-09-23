@@ -1,6 +1,3 @@
-public class JR_t_8_8 {
-    package com.javarush.task.task08.task0816;
-
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -10,18 +7,19 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Iterator;
 
+public class JR_t_8_8 {
+
 /*
 Добрая Зинаида и летние каникулы
 */
 
-    public class Solution {
-        public static Map<String, Date> createMap() throws ParseException {
+            public static Map<String, Date> createMap() throws ParseException {
             DateFormat dateFormat = new SimpleDateFormat("MMMMM d yyyy", Locale.ENGLISH);
             Map<String, Date> name_date = new HashMap<>();
 
             name_date.put("Смирнов", dateFormat.parse("MAY 1 2012"));
 
-            //напишите тут ваш код
+            // код
 
             name_date.put("Сидоров", dateFormat.parse("Jun 4 2003"));
             name_date.put("Гориванов", dateFormat.parse("APR 16 1984"));
@@ -40,44 +38,12 @@ import java.util.Iterator;
 
 /*
     public static void removeAllSummerPeople(Map<String, Date> map) {
-        //напишите тут ваш код
+        // код
 return map;
     }
 */
 
         public static void main(String[] args) {
-            System.out.println(createMap());
+
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
