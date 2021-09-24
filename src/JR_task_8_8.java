@@ -7,7 +7,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Iterator;
 
-public class JR_t_8_8 {
+public class JR_task_8_8 {
 
 /*
 Добрая Зинаида и летние каникулы
