@@ -1,6 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.ArrayList;
+import java.util.*;
 
 /*
 
@@ -19,8 +17,8 @@ import java.util.ArrayList;
  */
 public class JR_task_08_11_We_do_not_need_repeats {
 
-
     public static Map<String, String> createMap() {
+
         //Создаём словарь fio и заполняем его десятью парами имя + фамилия
         Map<String, String> fio = new HashMap<String, String>();
 
@@ -39,5 +37,49 @@ public class JR_task_08_11_We_do_not_need_repeats {
 
         return fio;
     }
+
+    public static void removeTheFirstNameDuplicates(Map<String, String> fio) {
+
+//Создаём лист
+        ArrayList<String> name = new ArrayList<>();
+
+//В лист передаём value от fio
+        list.addAll(fio.values());
+
+//Делаем два цикла, чтобы сравнить каждое с каждым. Т.е. первое со всеми, второе со всеми и т.д.
+// И мы сразу записываем в новый лист строки с уникальными именами,
+// затем этот список сравниваем с нашим словарём и оставляем только те значения, которые в листе есть
+// Третий цикл - смотрит на
+
+        String first;
+        String last;
+
+        for(int i = 0; i < name.size(); i++) {
+            first = name.get[i];
+            for(int z = 1; z < name.size(); z++) {
+                last = name.get[z];
+                removeItemFromMapByValue(
+
+                if (first.equals(last)) {
+                    removeItemFromMapByValue(
+
+
+                }
+
+// Метод, создающий копию словаря, получает на входе имя словаря и значение, по которому ищет совпадения для удаления
+
+                public static void removeItemFromMapByValue(Map<String, String> fio, String value) {
+                    Map<String, String> copy = new HashMap<>(fio);
+                    for (Map.Entry<String, String> pair : copy.entrySet()) {
+                        if (pair.getValue().equals(value)) {
+                            fio.remove(pair.getKey());
+                        }
+                    }
+                }
+
+                public static void main(String[] args) {
+
+                }
+            }
 }
 
