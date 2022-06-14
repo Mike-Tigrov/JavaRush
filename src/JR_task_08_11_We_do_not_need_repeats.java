@@ -15,6 +15,7 @@ import java.util.*;
 4) Метод removeTheFirstNameDuplicates() должен удалять из словаря всех людей, имеющих одинаковые имена.
 5) Метод removeTheFirstNameDuplicates() должен вызывать метод removeItemFromMapByValue().
  */
+/*
 public class JR_task_08_11_We_do_not_need_repeats {
 
     public static Map<String, String> createMap() {
@@ -82,4 +83,4 @@ public class JR_task_08_11_We_do_not_need_repeats {
                 }
             }
 }
-
+ */
