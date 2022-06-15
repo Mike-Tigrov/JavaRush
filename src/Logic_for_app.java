@@ -8,24 +8,14 @@ public class Logic_for_app {
         //Создаём систему ввода с клавиатуры
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Введите число:");
-
-        String number_button = reader.readLine();
-        int number_int = Integer.parseInt(number_button);
-
-
-
-
-
-
 //Создаём список стран
         System.out.println("Список стран:");
         ArrayList<String> country = new ArrayList<>();
-        country.add("1. Белоруссия");
-        country.add("2. Франция");
-        country.add("3. Германия");
-        country.add("4. Австралия");
-        country.add("5. Япония");
+        country.add("0. Белоруссия");
+        country.add("1. Франция");
+        country.add("2. Германия");
+        country.add("3. Австралия");
+        country.add("4. Япония");
 
 
 //Выводим список стран
@@ -37,19 +27,25 @@ public class Logic_for_app {
         //Создаём список столиц
         System.out.println("Список столиц:");
         ArrayList<String> capital = new ArrayList<>();
-        capital.add("1. Минск");
-        capital.add("2. Париж");
-        capital.add("3. Берлин");
-        capital.add("4. Канберра");
-        capital.add("5. Токио");
+        capital.add("0. Минск");
+        capital.add("1. Париж");
+        capital.add("2. Берлин");
+        capital.add("3. Канберра");
+        capital.add("4. Токио");
+
+        //Выводим список столиц на экран
+        for (String capitalList : capital) {
+            System.out.println(capitalList);
+        }
+        System.out.println();
 
 //Создаём копию списка стран
         ArrayList<String> countryCopy = new ArrayList<>(country);
 
 //Выводим копию списка стран
         System.out.println("Список стран-копия:");
-        for (String sc : countryCopy) {
-            System.out.println(sc);
+        for (String counry_copy : countryCopy) {
+            System.out.println(counry_copy);
         }
         System.out.println();
         System.out.println("Поехали!");
@@ -71,6 +67,10 @@ public class Logic_for_app {
                 System.out.println();
                 System.out.println("Случайное число: " + number);
                 System.out.println("Случайная страна: " + countryCopy.get(number));
+                System.out.println("Какая столица страны: " + countryCopy.get(number) + " - ?");
+                System.out.println("Введите номер страны:");
+                String number_button = reader.readLine();
+                int number_int = Integer.parseInt(number_button);
                 System.out.println();
 
 //Список стран-копия, скорректированный после нахождения 1 страны (эта страна из списка удаляется)
