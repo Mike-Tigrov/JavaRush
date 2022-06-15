@@ -62,12 +62,27 @@ public class Logic_for_app {
 
 //Выбираем случайную страну
 //В диапазоне, равном размеру копии-списка стран, создаём случайное число, с каждой итерацией, размер списка уменьшается на 1
+// Мы удаляем из списка именно ту страну, которая была выбрана до этого, чтобы в следующем случайном вызове её не было
                 Random random_country = new Random();
                 int number = random_country.nextInt(countryCopy.size());
                 System.out.println();
                 System.out.println("Случайное число: " + number);
                 System.out.println("Случайная страна: " + countryCopy.get(number));
                 System.out.println("Какая столица страны: " + countryCopy.get(number) + " - ?");
+                System.out.println("Варианты ответов:");
+
+                !!!
+                        //Нужно сформировать список стран, которые заполнят варианты ответов.
+                //Для этого нужно, чтобы на случайное место, встала правильная страна,
+                //А остальные 3 места заняли случайные страны из оставшегося списка
+                        //Необходимо составить список из правильной столицы и 3х случайных, затем генератором случайных чисел заполнить массив и уже этот массив выдавать
+                        //как данные для 4х кнопок
+                !!!
+                    System.out.println("случайная столица 1");
+                    System.out.println("случайная столица 2");
+                    System.out.println("случайная столица 3");
+                    System.out.println("случайная столица 4");
+
                 System.out.println("Введите номер страны:");
                 String number_button = reader.readLine();
                 int number_int = Integer.parseInt(number_button);
