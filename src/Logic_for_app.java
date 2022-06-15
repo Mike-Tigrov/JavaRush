@@ -1,8 +1,22 @@
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Logic_for_app {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
+        //Создаём систему ввода с клавиатуры
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Введите число:");
+
+        String number_button = reader.readLine();
+        int number_int = Integer.parseInt(number_button);
+
+
+
+
+
 
 //Создаём список стран
         System.out.println("Список стран:");
@@ -20,6 +34,15 @@ public class Logic_for_app {
         }
         System.out.println();
 
+        //Создаём список столиц
+        System.out.println("Список столиц:");
+        ArrayList<String> capital = new ArrayList<>();
+        capital.add("1. Минск");
+        capital.add("2. Париж");
+        capital.add("3. Берлин");
+        capital.add("4. Канберра");
+        capital.add("5. Токио");
+
 //Создаём копию списка стран
         ArrayList<String> countryCopy = new ArrayList<>(country);
 
@@ -31,13 +54,15 @@ public class Logic_for_app {
         System.out.println();
         System.out.println("Поехали!");
 
-        //Нужно обработать действие после того, как список будет пуст... в процессе
-        if (countryCopy.size() == 0) {
-            System.out.println("Закончили! " + "Правильных ответов: ..." + "Стоит подумать над: ... ответами");
-        } else {
 
-            //Цикл - выбор страны случайной генерацией (в приложении это будет делать кнопка Далее)
-            for (int f = 0; f < country.size(); f++) {
+        //Цикл - выбор страны случайной генерацией (в приложении это будет делать кнопка Далее)
+        for (int f = 0; f < country.size(); f++) {
+
+            //Нужно обработать действие после того, как список будет пуст... !!!в процессе!!!
+            if (countryCopy.size() == 1) {
+                System.out.println();
+                System.out.println("Закончили! " + "Правильных ответов: ..." + "Стоит подумать над: ... ответами");
+            } else {
 
 //Выбираем случайную страну
 //В диапазоне, равном размеру копии-списка стран, создаём случайное число, с каждой итерацией, размер списка уменьшается на 1
