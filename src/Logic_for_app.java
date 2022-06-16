@@ -67,7 +67,7 @@ public class Logic_for_app {
                 int number = random_country.nextInt(countryCopy.size());
                 System.out.println();
                 System.out.println("Случайное число: " + number);
-                System.out.println("Случайная страна: " + countryCopy.get(number));
+                System.out.println("Случайному числу " + number + " соответствует страна: " + countryCopy.get(number));
                 System.out.println("Какая столица страны: " + countryCopy.get(number) + " - ?");
                 System.out.println("Варианты ответов:");
 
@@ -78,14 +78,50 @@ public class Logic_for_app {
                         //Необходимо составить список из правильной столицы и 3х случайных, затем генератором случайных чисел заполнить массив и уже этот массив выдавать
                         //как данные для 4х кнопок
 
+                //Кнопка с правильным ответом
                     System.out.println(capital.get(number));
+/*
+... мы берём 1 столицу из списка столиц по номеру страны. 3 других мы получаем генератором сл.чисел, и следим, чтобы из этих трёх столиц не было дублей.
 
-                    int random_capital_1 = random_country.nextInt(capital.size());
-                    System.out.println(capital.get(random_capital_1));
-                    System.out.println("случайная столица 3");
-                    System.out.println("случайная столица 4");
+То есть, используем генератор на второй столице. Если выпадает такое же число, генерируем ещё раз.
+Третья столица не должна быть равна 1 и 2.
+Четвёртая не должна быть равна 1,2 и 3.
 
-                System.out.println("Введите номер страны:");
+Таким образом, у нас есть 4 разные цифры.
+
+Мы записываем их в массив.
+Массив мы перемешиваем генератором.
+Перемешанный массив уже имеет случайное распределение столиц на 4 кнопках. И его используем для установления текстов на кнопках.
+...
+После каждого нажатия кнопки срабатывает счётчик.
+Общий счётчик вопросов
+Счётчик правильных ответов
+Счётчик неправильных ответов
+...
+И как решить вопрос с оставшейся последней страной?
+ */
+                Random random_capital_1 = new Random();
+                    int number_random_capital_1 = random_capital_1.nextInt(capital.size());
+                    if (number_random_capital_1 == number) {
+                        number_random_capital_1 = random_capital_1.nextInt(capital.size());
+                    }
+                    System.out.println(capital.get(number_random_capital_1));
+
+                Random random_capital_2 = new Random();
+                int number_random_capital_2 = random_capital_2.nextInt(capital.size());
+                if (number_random_capital_2 == number) {
+                    number_random_capital_2 = random_capital_2.nextInt(capital.size());
+                    if (number_random_capital_2 == number_random_capital_1) {
+                        number_random_capital_2 = random_capital_2.nextInt(capital.size());
+                    }
+                }
+                System.out.println(capital.get(number_random_capital_2));
+
+                Random random_capital_3 = new Random();
+                int number_random_capital_3 = random_capital_3.nextInt(capital.size());
+                System.out.println(capital.get(number_random_capital_3));
+
+                System.out.println("Введите номер страны и нажмите Enter:");
                 String number_button = reader.readLine();
                 int number_int = Integer.parseInt(number_button);
                 System.out.println();
