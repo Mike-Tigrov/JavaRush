@@ -71,15 +71,17 @@ public class Logic_for_app {
                 System.out.println("Какая столица страны: " + countryCopy.get(number) + " - ?");
                 System.out.println("Варианты ответов:");
 
-                !!!
+
                         //Нужно сформировать список стран, которые заполнят варианты ответов.
                 //Для этого нужно, чтобы на случайное место, встала правильная страна,
                 //А остальные 3 места заняли случайные страны из оставшегося списка
                         //Необходимо составить список из правильной столицы и 3х случайных, затем генератором случайных чисел заполнить массив и уже этот массив выдавать
                         //как данные для 4х кнопок
-                !!!
-                    System.out.println("случайная столица 1");
-                    System.out.println("случайная столица 2");
+
+                    System.out.println(capital.get(number));
+
+                    int random_capital_1 = random_country.nextInt(capital.size());
+                    System.out.println(capital.get(random_capital_1));
                     System.out.println("случайная столица 3");
                     System.out.println("случайная столица 4");
 
