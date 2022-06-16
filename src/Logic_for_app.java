@@ -64,13 +64,31 @@ public class Logic_for_app {
 //В диапазоне, равном размеру копии-списка стран, создаём случайное число, с каждой итерацией, размер списка уменьшается на 1
 // Мы удаляем из списка именно ту страну, которая была выбрана до этого, чтобы в следующем случайном вызове её не было
                 Random random_country = new Random();
-                int number = random_country.nextInt(countryCopy.size());
+                int general_number = random_country.nextInt(countryCopy.size());
                 System.out.println();
-                System.out.println("Случайное число: " + number);
-                System.out.println("Случайному числу " + number + " соответствует страна: " + countryCopy.get(number));
-                System.out.println("Какая столица страны: " + countryCopy.get(number) + " - ?");
+                System.out.println("Случайное число: " + general_number);
+                System.out.println("Случайному числу " + general_number + " соответствует страна: " + countryCopy.get(general_number));
+
+                String country_to_char = countryCopy.get(general_number);
+                char first_simbol = country_to_char.charAt(0);
+                System.out.println("Первый символ строки из списка стран: " + country_to_char + " Первый символ - " + first_simbol);
+
+                System.out.println("Какая столица страны: " + countryCopy.get(general_number) + " - ?");
                 System.out.println("Варианты ответов:");
 
+
+
+                /* Сноска с описанием переменных:
+                general_number - общий номер. Создаётся случайно. По этому номеру появляется страна в вопросе и правильная столица в ответах
+Так как у нас удаляются страны из списка-копии, то у нас меняются значения позиций и страны перестают соответствовать столицам по номеру позиции из 2х списков.
+Поэтому мы ищем в строке первый символ, а он у нас "цифра" и по нему уже ищем столицу.
+
+String str = "Первый символ строки";
+int first = str.length()-1;// на форуме где читал, там был пример с последним символом, поэтому -1, а 0 не работает
+char ch = str.charAt(first);
+System.out.println(ch);
+char c = str.charAt(0);
+                 */
 
                         //Нужно сформировать список стран, которые заполнят варианты ответов.
                 //Для этого нужно, чтобы на случайное место, встала правильная страна,
@@ -79,7 +97,7 @@ public class Logic_for_app {
                         //как данные для 4х кнопок
 
                 //Кнопка с правильным ответом
-                    System.out.println(capital.get(number));
+                    System.out.println(capital.get(general_number));
 /*
 ... мы берём 1 столицу из списка столиц по номеру страны. 3 других мы получаем генератором сл.чисел, и следим, чтобы из этих трёх столиц не было дублей.
 
@@ -100,25 +118,33 @@ public class Logic_for_app {
 ...
 И как решить вопрос с оставшейся последней страной?
  */
+
+                //Кнопка с неправильным ответом №1, которая отличается от кнопки с правильным ответом
                 Random random_capital_1 = new Random();
                     int number_random_capital_1 = random_capital_1.nextInt(capital.size());
-                    if (number_random_capital_1 == number) {
+                    if (number_random_capital_1 == general_number) {
                         number_random_capital_1 = random_capital_1.nextInt(capital.size());
                     }
                     System.out.println(capital.get(number_random_capital_1));
 
+                    //Кнопка с неправильным ответом №2, которая отличается от кнопки с правильным ответом и кнопки с неправильным ответом №1
                 Random random_capital_2 = new Random();
+                //генерируем случайную цифру
                 int number_random_capital_2 = random_capital_2.nextInt(capital.size());
-                if (number_random_capital_2 == number) {
+                //Если случайная цифра равна правильной кнопке
+                if (number_random_capital_2 == general_number || number_random_capital_2 == number_random_capital_1) {
                     number_random_capital_2 = random_capital_2.nextInt(capital.size());
-                    if (number_random_capital_2 == number_random_capital_1) {
-                        number_random_capital_2 = random_capital_2.nextInt(capital.size());
-                    }
                 }
-                System.out.println(capital.get(number_random_capital_2));
+              System.out.println(capital.get(number_random_capital_2));
 
+//Кнопка с неправильным ответом №3, которая отличается от кнопки с правильным ответом и кнопок с неправильным ответом №1 и №2
                 Random random_capital_3 = new Random();
                 int number_random_capital_3 = random_capital_3.nextInt(capital.size());
+                if (number_random_capital_3 == general_number || number_random_capital_3 == number_random_capital_1 || number_random_capital_3 == number_random_capital_2) {
+                    number_random_capital_3 = random_capital_3.nextInt(capital.size());
+
+                }
+
                 System.out.println(capital.get(number_random_capital_3));
 
                 System.out.println("Введите номер страны и нажмите Enter:");
@@ -127,7 +153,7 @@ public class Logic_for_app {
                 System.out.println();
 
 //Список стран-копия, скорректированный после нахождения 1 страны (эта страна из списка удаляется)
-                countryCopy.remove(number);
+                countryCopy.remove(general_number);
                 System.out.println("Список стран-копия после удаления: ");
                 for (String sc : countryCopy) {
                     System.out.println(sc);
