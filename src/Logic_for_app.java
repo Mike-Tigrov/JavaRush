@@ -17,7 +17,6 @@ public class Logic_for_app {
         country.add("3. Австралия");
         country.add("4. Япония");
 
-
 //Выводим список стран
         for (String s : country) {
             System.out.println(s);
@@ -37,23 +36,63 @@ public class Logic_for_app {
         for (String capitalList : capital) {
             System.out.println(capitalList);
         }
-        System.out.println();
 
-//Создаём копию списка стран
-        ArrayList<String> countryCopy = new ArrayList<>(country);
+        /*
+        Вначале я хотел сделать так, чтобы страны появлялись случайным образом, но возникла сложность с выводом
+        правильного ответа - страна - столица. Первоначально думал сделать по номеру. Затем создать список стран-копию,
+        и из него постепенно удалять по 1 стране, которые были уже названы. Однако в этом случае сбивалась общая нумерация стран,
+        а без неё доставать правильные ответы - столицы, стало сложнее. И в итоге я отказался от этой сложной конструкции.
+        Возможно она будет в следующих обновлениях. А пока что страны будут возникать по алфавиту.
+         */
 
-//Выводим копию списка стран
-        System.out.println("Список стран-копия:");
-        for (String counry_copy : countryCopy) {
-            System.out.println(counry_copy);
-        }
         System.out.println();
         System.out.println("Поехали!");
+        System.out.println();
 
 
-        //Цикл - выбор страны случайной генерацией (в приложении это будет делать кнопка Далее)
-        for (int f = 0; f < country.size(); f++) {
+        //Цикл - выбор страны по порядку (в приложении это будет делать кнопка Далее или проверка)
+        for (int i = 0; i < country.size(); i++) {
+            System.out.println("Какая столица у страны - " + country.get(i) + " ?");
+            System.out.println("Варианты ответов:");
 
+            //Правильный - берётся по номеру страны из списка столиц:
+            System.out.println(capital.get(i));
+            //Неверный 1 - генерируется случайным образом из числа позиций в списке столиц
+            Random random_capital_1 = new Random();
+            int incorrect_random_capital_1 = random_capital_1.nextInt(capital.size());
+            //Исключаем дублирования столиц
+            while (incorrect_random_capital_1 == i){
+                incorrect_random_capital_1 = random_capital_1.nextInt(capital.size());
+            }
+            System.out.println(capital.get(incorrect_random_capital_1));
+
+            //Неверный ответ2
+            Random random_capital_2 = new Random();
+            int incorrect_random_capital_2 = random_capital_2.nextInt(capital.size());
+            //Исключаем дублирования столиц
+            while (incorrect_random_capital_2 == i || incorrect_random_capital_2 == incorrect_random_capital_1){
+                incorrect_random_capital_2 = random_capital_2.nextInt(capital.size());
+            }
+            System.out.println(capital.get(incorrect_random_capital_2));
+
+            //Неверный 3
+            Random random_capital_3 = new Random();
+            int incorrect_random_capital_3 = random_capital_3.nextInt(capital.size());
+            //Исключаем дублирования столиц
+            while (incorrect_random_capital_3 == i || incorrect_random_capital_3 == incorrect_random_capital_1 || incorrect_random_capital_3 == incorrect_random_capital_2){
+                incorrect_random_capital_3 = random_capital_3.nextInt(capital.size());
+            }
+            System.out.println(capital.get(incorrect_random_capital_3));
+
+            //Создаём список с ответами. При этом ответы располагаеются случайным образом
+            ArrayList<int> new_list_capital = new ArrayList<>();
+            new_list_capital.add();
+
+
+        }
+    }
+}
+/*
             //Нужно обработать действие после того, как список будет пуст... !!!в процессе!!!
             if (countryCopy.size() == 1) {
                 System.out.println();
@@ -97,8 +136,7 @@ char c = str.charAt(0);
                         //как данные для 4х кнопок
 
                 //Кнопка с правильным ответом
-                    System.out.println(capital.get(general_number));
-/*
+                    /*
 ... мы берём 1 столицу из списка столиц по номеру страны. 3 других мы получаем генератором сл.чисел, и следим, чтобы из этих трёх столиц не было дублей.
 
 То есть, используем генератор на второй столице. Если выпадает такое же число, генерируем ещё раз.
@@ -118,7 +156,7 @@ char c = str.charAt(0);
 ...
 И как решить вопрос с оставшейся последней страной?
  */
-
+/*
                 //Кнопка с неправильным ответом №1, которая отличается от кнопки с правильным ответом
                 Random random_capital_1 = new Random();
                     int number_random_capital_1 = random_capital_1.nextInt(capital.size());
@@ -163,3 +201,4 @@ char c = str.charAt(0);
         }
     }
 }
+*/
