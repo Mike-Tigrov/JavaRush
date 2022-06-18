@@ -63,10 +63,11 @@ public class Logic_for_app {
         //Цикл - выбор страны по порядку (в приложении это будет делать кнопка Далее или проверка)
         for (int i = 0; i < country.size(); i++) {
             System.out.println("Какая столица у страны - " + country.get(i) + " ?");
+            System.out.println();
             System.out.println("Варианты ответов:");
 
             //Правильный - берётся по номеру страны из списка столиц:
-            System.out.println(capital.get(i));
+            // System.out.println(capital.get(i));
             //Неверный 1 - генерируется случайным образом из числа позиций в списке столиц
             Random random_capital_1 = new Random();
             int incorrect_random_capital_1 = random_capital_1.nextInt(capital.size());
@@ -74,7 +75,8 @@ public class Logic_for_app {
             while (incorrect_random_capital_1 == i){
                 incorrect_random_capital_1 = random_capital_1.nextInt(capital.size());
             }
-            System.out.println(capital.get(incorrect_random_capital_1));
+
+            // System.out.println(capital.get(incorrect_random_capital_1));
 
             //Неверный ответ2
             Random random_capital_2 = new Random();
@@ -83,7 +85,7 @@ public class Logic_for_app {
             while (incorrect_random_capital_2 == i || incorrect_random_capital_2 == incorrect_random_capital_1){
                 incorrect_random_capital_2 = random_capital_2.nextInt(capital.size());
             }
-            System.out.println(capital.get(incorrect_random_capital_2));
+            // System.out.println(capital.get(incorrect_random_capital_2));
 
             //Неверный 3
             Random random_capital_3 = new Random();
@@ -92,29 +94,66 @@ public class Logic_for_app {
             while (incorrect_random_capital_3 == i || incorrect_random_capital_3 == incorrect_random_capital_1 || incorrect_random_capital_3 == incorrect_random_capital_2){
                 incorrect_random_capital_3 = random_capital_3.nextInt(capital.size());
             }
-            System.out.println(capital.get(incorrect_random_capital_3));
-            System.out.println();
+            // System.out.println(capital.get(incorrect_random_capital_3));
 
-            //Создаём список с ответами. Пока что ответы в порядке создания
+
+            //Создаём список с ответами. Пока что ответы в порядке создания, их надо перемешать
             ArrayList<String> new_list_capital = new ArrayList<>();
             new_list_capital.add(capital.get(i));
             new_list_capital.add(capital.get(incorrect_random_capital_1));
             new_list_capital.add(capital.get(incorrect_random_capital_2));
             new_list_capital.add(capital.get(incorrect_random_capital_3));
 
-            //Выводим список с ответами на экран:
-            for (String nlc : new_list_capital) {
-                System.out.println(nlc);
-            }
+            //Делаем копию массива из которой будем брать значения
+            ArrayList<String> new_list_capital_copy = new ArrayList<>(new_list_capital);
             System.out.println();
 //Перемешиваем значения в массиве
-            Collections.shuffle(new_list_capital);
+            //Какое место займёт первая позиция
+            Random first_place = new Random();
+            int first = first_place.nextInt(3);
+            System.out.println("Первое место: " + first);
+            System.out.println();
+
+            Random second_place = new Random();
+            int second = second_place.nextInt(3);
+            System.out.println("Второе место: " + second);
+            System.out.println();
+
+            Random third_place = new Random();
+            int third = second_place.nextInt(3);
+            System.out.println("Третье место: " + third);
+            System.out.println();
+
+            Random fourth_place = new Random();
+            int fourth = second_place.nextInt(3);
+            System.out.println("Второе место: " + second);
+            System.out.println();
 
             //Выводим новый перемешанный список на экран
             for (String nlc2 : new_list_capital) {
                 System.out.println(nlc2);
             }
 
+            System.out.println("Введите номер столицы (1,2,3 или 4) и нажмите Enter:");
+            String number_button = reader.readLine();
+            int number_int = Integer.parseInt(number_button);
+            System.out.println();
+
+            if (number_int == 1) {
+                System.out.println(new_list_capital.get(0));
+            } else if (number_int == 2) {
+                System.out.println(new_list_capital.get(1));
+            } else if (number_int == 3) {
+                System.out.println(new_list_capital.get(2));
+            } else if (number_int == 4) {
+                System.out.println(new_list_capital.get(3));
+            }
+            //Мы проверяем список столиц и ищем там совпадение со столицей, которая была выбрана
+
+
+
+            System.out.println("Вы ввели цифру: " + number_int + " это " + new_list_capital.get(number_int));
+            System.out.println();
         }
     }
 }
@@ -211,10 +250,7 @@ char c = str.charAt(0);
 
                 System.out.println(capital.get(number_random_capital_3));
 
-                System.out.println("Введите номер страны и нажмите Enter:");
-                String number_button = reader.readLine();
-                int number_int = Integer.parseInt(number_button);
-                System.out.println();
+
 
 //Список стран-копия, скорректированный после нахождения 1 страны (эта страна из списка удаляется)
                 countryCopy.remove(general_number);
