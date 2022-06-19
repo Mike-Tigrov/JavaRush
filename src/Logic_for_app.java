@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Collections;
+
 import java.util.Random;
 
 public class Logic_for_app {
@@ -98,72 +98,30 @@ public class Logic_for_app {
 
 
             //Создаём список с ответами. Пока что ответы в порядке создания, их надо перемешать
-            ArrayList<String> new_list_capital = new ArrayList<>();
-            new_list_capital.add(capital.get(i));
-            new_list_capital.add(capital.get(incorrect_random_capital_1));
-            new_list_capital.add(capital.get(incorrect_random_capital_2));
-            new_list_capital.add(capital.get(incorrect_random_capital_3));
+            ArrayList<String> answer_capital = new ArrayList<>();
+            answer_capital.add(capital.get(i));
+            answer_capital.add(capital.get(incorrect_random_capital_1));
+            answer_capital.add(capital.get(incorrect_random_capital_2));
+            answer_capital.add(capital.get(incorrect_random_capital_3));
 
-            //Делаем копию массива из которой будем брать значения
-            ArrayList<String> new_list_capital_copy = new ArrayList<>(new_list_capital);
-            System.out.println();
-
-//Перемешиваем значения в массиве
-            //Какое место займёт первая позиция
-            Random first_place = new Random();
-            int first = first_place.nextInt(4);
-            System.out.println("Первое место: " + first);
-
-            //Вторая позиция занимает место не равное 1й позиции
-            Random second_place = new Random();
-            int second = second_place.nextInt(4);
-            while (second == first) {
-                second = second_place.nextInt(4);
+            // Выводим список вариантов ответов на экран
+            for (String cap : answer_capital){
+                System.out.println(cap);
             }
-            System.out.println("Второе место: " + second);
 
 
-//Третья позиция займет место, не равное 1 и 2 позиции
-            Random third_place = new Random();
-            int third = third_place.nextInt(4);
-            while (third == second || third == first) {
-                third = third_place.nextInt(4);
-            }
-            System.out.println("Третье место: " + third);
-
-//Четвёртая позиция займёт место, не равное 1,2 и 3 позиции
-            Random fourth_place = new Random();
-            int fourth = fourth_place.nextInt(4);
-            while (fourth == second || fourth == first || fourth == third) {
-                fourth = fourth_place.nextInt(4);
-            }
-            System.out.println("Четвёртое место: " + fourth);
-
-
-            //Выводим новый перемешанный список на экран
-            for (String nlc2 : new_list_capital) {
-                System.out.println(nlc2);
-            }
 
             System.out.println("Введите номер столицы (1,2,3 или 4) и нажмите Enter:");
             String number_button = reader.readLine();
             int number_int = Integer.parseInt(number_button);
             System.out.println();
 
-            if (number_int == 1) {
-                System.out.println(new_list_capital.get(0));
-            } else if (number_int == 2) {
-                System.out.println(new_list_capital.get(1));
-            } else if (number_int == 3) {
-                System.out.println(new_list_capital.get(2));
-            } else if (number_int == 4) {
-                System.out.println(new_list_capital.get(3));
-            }
+
             //Мы проверяем список столиц и ищем там совпадение со столицей, которая была выбрана
 
 
 
-            System.out.println("Вы ввели цифру: " + number_int + " это " + new_list_capital.get(number_int));
+            System.out.println("Вы ввели цифру: " + number_int + " это " + answer_capital.get(number_int));
             System.out.println();
         }
     }
