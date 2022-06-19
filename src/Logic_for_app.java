@@ -107,27 +107,38 @@ public class Logic_for_app {
             //Делаем копию массива из которой будем брать значения
             ArrayList<String> new_list_capital_copy = new ArrayList<>(new_list_capital);
             System.out.println();
+
 //Перемешиваем значения в массиве
             //Какое место займёт первая позиция
             Random first_place = new Random();
-            int first = first_place.nextInt(3);
+            int first = first_place.nextInt(4);
             System.out.println("Первое место: " + first);
-            System.out.println();
 
+            //Вторая позиция занимает место не равное 1й позиции
             Random second_place = new Random();
-            int second = second_place.nextInt(3);
+            int second = second_place.nextInt(4);
+            while (second == first) {
+                second = second_place.nextInt(4);
+            }
             System.out.println("Второе место: " + second);
-            System.out.println();
 
+
+//Третья позиция займет место, не равное 1 и 2 позиции
             Random third_place = new Random();
-            int third = second_place.nextInt(3);
+            int third = third_place.nextInt(4);
+            while (third == second || third == first) {
+                third = third_place.nextInt(4);
+            }
             System.out.println("Третье место: " + third);
-            System.out.println();
 
+//Четвёртая позиция займёт место, не равное 1,2 и 3 позиции
             Random fourth_place = new Random();
-            int fourth = second_place.nextInt(3);
-            System.out.println("Второе место: " + second);
-            System.out.println();
+            int fourth = fourth_place.nextInt(4);
+            while (fourth == second || fourth == first || fourth == third) {
+                fourth = fourth_place.nextInt(4);
+            }
+            System.out.println("Четвёртое место: " + fourth);
+
 
             //Выводим новый перемешанный список на экран
             for (String nlc2 : new_list_capital) {
