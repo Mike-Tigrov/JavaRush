@@ -71,6 +71,7 @@ public class Logic_for_app {
 
         //Цикл - выбор страны по порядку (в приложении это будет делать кнопка Далее или проверка)
         for (int i = 0; i < country.size(); i++) {
+            System.out.println();
             System.out.println("Какая столица у страны - " + country.get(i) + " ?");
             System.out.println();
             System.out.println("Варианты ответов:");
@@ -143,7 +144,29 @@ public class Logic_for_app {
             System.out.println();
 
             //Алгоритм проверки правильности выбора столицы:
-            //
+            //Цикл поиска номера по списку столиц
+            int num_cap = 0;
+            for (int q = 0; q < capital.size(); q++) {
+                if (answer_capital[number_int-1].equals(capital.get(q))) {
+                    System.out.println("Номер найденной позиции в списке столиц = " + capital.get(q));
+                    num_cap = q;
+                }
+                 }
+            //Цикл поиска номера по списку стран
+            int num_cou = 0;
+            for (int w = 0; w < country.size(); w++) {
+                if (country.get(i).equals(country.get(w))) {
+                    System.out.println("Номер найденной позиции в списке стран = " + country.get(w));
+                    num_cou = w;
+                }
+                            }
+
+            if (num_cap == num_cou) {
+                System.out.println("Верный ответ!");
+            } else {
+                System.out.println("Ошибка");
+            }
         }
+
     }
 }
