@@ -98,17 +98,32 @@ public class Logic_for_app {
 
 
             //Создаём список с ответами. Пока что ответы в порядке создания, их надо перемешать
-            ArrayList<String> answer_capital = new ArrayList<>();
-            answer_capital.add(capital.get(i));
-            answer_capital.add(capital.get(incorrect_random_capital_1));
-            answer_capital.add(capital.get(incorrect_random_capital_2));
-            answer_capital.add(capital.get(incorrect_random_capital_3));
+            String[] answer_capital = new String[4];
+            answer_capital[0] = capital.get(i);
+            answer_capital[1] = capital.get(incorrect_random_capital_1);
+            answer_capital[2] = capital.get(incorrect_random_capital_2);
+            answer_capital[3] = capital.get(incorrect_random_capital_3);
 
-            // Выводим список вариантов ответов на экран
+            /* Выводим неперемешаный список вариантов ответов на экран
             for (String cap : answer_capital){
                 System.out.println(cap);
             }
 
+             */
+
+            //Перемешиваем список
+//Мы меняем в массиве местами 2 позиции: позицию правильного ответа и позицию случайной строки
+//                    System.out.println("Начали перемешивать" );
+            Random a_c = new Random();
+            int temp_i = a_c.nextInt(answer_capital.length);
+            String temp = answer_capital[temp_i];
+            //System.out.println("Сгенерировали случайное число " + temp_i + " и поменяли местами 2 позиции: позицию правильного ответа и случайного числа");
+            answer_capital[temp_i] = answer_capital[0];
+            answer_capital[0] = temp;
+            //Выводим перемешаный список на экран
+            for (String cap : answer_capital){
+                System.out.println(cap);
+            }
 
 
             System.out.println("Введите номер столицы (1,2,3 или 4) и нажмите Enter:");
@@ -121,7 +136,7 @@ public class Logic_for_app {
 
 
 
-            System.out.println("Вы ввели цифру: " + number_int + " это " + answer_capital.get(number_int));
+            System.out.println("Вы ввели цифру: " + number_int + " это " + answer_capital[number_int]);
             System.out.println();
         }
     }
@@ -194,7 +209,7 @@ char c = str.charAt(0);
                 //Кнопка с неправильным ответом №1, которая отличается от кнопки с правильным ответом
                 Random random_capital_1 = new Random();
                     int number_random_capital_1 = random_capital_1.nextInt(capital.size());
-                    if (number_random_capital_1 == general_number) {
+                    if (number_random_capital_1 == general_number){
                         number_random_capital_1 = random_capital_1.nextInt(capital.size());
                     }
                     System.out.println(capital.get(number_random_capital_1));
