@@ -12,11 +12,18 @@ public class Logic_for_app {
 //Создаём список стран
         //System.out.println("Список стран:");
         ArrayList<String> country = new ArrayList<>();
-        country.add("0. Белоруссия");
-        country.add("1. Франция");
-        country.add("2. Германия");
-        country.add("3. Австралия");
-        country.add("4. Япония");
+        country.add("Белоруссия");
+        country.add("Франция");
+        country.add("Германия");
+        country.add("Австралия");
+        country.add("Япония");
+        country.add("Ямайка");
+        country.add("Эквадор");
+        country.add("Эстония");
+        country.add("Швейцария");
+        country.add("Швеция");
+        country.add("Чехия");
+        country.add("Чили");
 
 /*Выводим список стран
         for (String s : country) {
@@ -29,11 +36,25 @@ public class Logic_for_app {
         //Создаём список столиц
         //System.out.println("Список столиц:");
         ArrayList<String> capital = new ArrayList<>();
-        capital.add("0. Минск");
-        capital.add("1. Париж");
-        capital.add("2. Берлин");
-        capital.add("3. Канберра");
-        capital.add("4. Токио");
+        capital.add("Минск");
+        capital.add("Париж");
+        capital.add("Берлин");
+        capital.add("Канберра");
+        capital.add("Токио");
+        capital.add("Кингстон");
+        capital.add("Кито");
+        capital.add("Таллинн");
+        capital.add("Берн");
+        capital.add("Стокгольм");
+        capital.add("Прага");
+        capital.add("Сантьяго");
+
+
+
+
+
+
+
 
         /*Выводим список столиц на экран
         for (String capitalList : capital) {
@@ -41,7 +62,9 @@ public class Logic_for_app {
         }
 
          */
-
+        //Счётчики правильных и неправильных ответов
+        int correct = 0;
+        int incorrect = 0;
         /*
         Вначале я хотел сделать так, чтобы страны (т.е. вопросы по странам) появлялись случайным образом,
         но возникла сложность с выводом правильного ответа - страна - столица. Первоначально думал сделать по номеру.
@@ -66,7 +89,7 @@ public class Logic_for_app {
 
         System.out.println();
         System.out.println("Поехали!");
-        System.out.println();
+
 
 
         //Цикл - выбор страны по порядку (в приложении это будет делать кнопка Далее или проверка)
@@ -132,6 +155,7 @@ public class Logic_for_app {
             for (String cap : answer_capital){
                 System.out.println(cap);
             }
+            System.out.println();
 
 
             System.out.println("Введите номер столицы (1,2,3 или 4) и нажмите Enter:");
@@ -148,7 +172,7 @@ public class Logic_for_app {
             int num_cap = 0;
             for (int q = 0; q < capital.size(); q++) {
                 if (answer_capital[number_int-1].equals(capital.get(q))) {
-                    System.out.println("Номер найденной позиции в списке столиц = " + capital.get(q));
+                    //System.out.println("Номер найденной позиции в списке столиц = " + capital.get(q));
                     num_cap = q;
                 }
                  }
@@ -156,17 +180,26 @@ public class Logic_for_app {
             int num_cou = 0;
             for (int w = 0; w < country.size(); w++) {
                 if (country.get(i).equals(country.get(w))) {
-                    System.out.println("Номер найденной позиции в списке стран = " + country.get(w));
+                    //System.out.println("Номер найденной позиции в списке стран = " + country.get(w));
                     num_cou = w;
                 }
                             }
+//Правильный или неправильный ответ + счётчик
 
             if (num_cap == num_cou) {
                 System.out.println("Верный ответ!");
+                correct++;
             } else {
-                System.out.println("Ошибка");
+                System.out.println("Ответ неверный, подумайте ещё");
+                incorrect++;
             }
+
         }
+        System.out.println();
+        System.out.println();
+        System.out.println("Ваши результаты: ");
+        System.out.println("Правильных ответов: " + correct);
+        System.out.println("Ошибок: " + incorrect);
 
     }
 }
