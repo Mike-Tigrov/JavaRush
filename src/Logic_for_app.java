@@ -105,7 +105,7 @@ public class Logic_for_app {
             //Правильный - берётся по номеру страны из списка столиц:
             // System.out.println(capital.get(i));
             //Неверный 1 - генерируется случайным образом из числа позиций в списке столиц
-            Random random_capital_1 = new Random();
+            //Random random_capital_1 = new Random();
             int incorrect_random_capital_1 = random.nextInt(capital.size());
             //Исключаем дублирования столиц
             while (incorrect_random_capital_1 == i){
@@ -115,7 +115,7 @@ public class Logic_for_app {
             // System.out.println(capital.get(incorrect_random_capital_1));
 
             //Неверный ответ2
-            Random random_capital_2 = new Random();
+           // Random random_capital_2 = new Random();
             int incorrect_random_capital_2 = random.nextInt(capital.size());
             //Исключаем дублирования столиц
             while (incorrect_random_capital_2 == i || incorrect_random_capital_2 == incorrect_random_capital_1){
@@ -124,7 +124,7 @@ public class Logic_for_app {
             // System.out.println(capital.get(incorrect_random_capital_2));
 
             //Неверный 3
-            Random random_capital_3 = new Random();
+            //Random random_capital_3 = new Random();
             int incorrect_random_capital_3 = random.nextInt(capital.size());
             //Исключаем дублирования столиц
             while (incorrect_random_capital_3 == i || incorrect_random_capital_3 == incorrect_random_capital_1 || incorrect_random_capital_3 == incorrect_random_capital_2){
@@ -148,7 +148,7 @@ public class Logic_for_app {
             //Перемешиваем список
 //Мы меняем в массиве местами 2 позиции: позицию правильного ответа и позицию случайной строки
 //                    System.out.println("Начали перемешивать" );
-            Random a_c = new Random();
+            //Random a_c = new Random();
             int temp_i = random.nextInt(answer_capital.length);
             String temp = answer_capital[temp_i];
             //System.out.println("Сгенерировали случайное число " + temp_i + " и поменяли местами 2 позиции: позицию правильного ответа и случайного числа");
