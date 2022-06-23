@@ -9,6 +9,9 @@ public class Logic_for_app {
         //Создаём систему ввода с клавиатуры
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+        //Создаём новый объект для генерации случайных значений
+        Random random = new Random();
+
 //Создаём список стран
         //System.out.println("Список стран:");
         ArrayList<String> country = new ArrayList<>();
@@ -103,29 +106,29 @@ public class Logic_for_app {
             // System.out.println(capital.get(i));
             //Неверный 1 - генерируется случайным образом из числа позиций в списке столиц
             Random random_capital_1 = new Random();
-            int incorrect_random_capital_1 = random_capital_1.nextInt(capital.size());
+            int incorrect_random_capital_1 = random.nextInt(capital.size());
             //Исключаем дублирования столиц
             while (incorrect_random_capital_1 == i){
-                incorrect_random_capital_1 = random_capital_1.nextInt(capital.size());
+                incorrect_random_capital_1 = random.nextInt(capital.size());
             }
 
             // System.out.println(capital.get(incorrect_random_capital_1));
 
             //Неверный ответ2
             Random random_capital_2 = new Random();
-            int incorrect_random_capital_2 = random_capital_2.nextInt(capital.size());
+            int incorrect_random_capital_2 = random.nextInt(capital.size());
             //Исключаем дублирования столиц
             while (incorrect_random_capital_2 == i || incorrect_random_capital_2 == incorrect_random_capital_1){
-                incorrect_random_capital_2 = random_capital_2.nextInt(capital.size());
+                incorrect_random_capital_2 = random.nextInt(capital.size());
             }
             // System.out.println(capital.get(incorrect_random_capital_2));
 
             //Неверный 3
             Random random_capital_3 = new Random();
-            int incorrect_random_capital_3 = random_capital_3.nextInt(capital.size());
+            int incorrect_random_capital_3 = random.nextInt(capital.size());
             //Исключаем дублирования столиц
             while (incorrect_random_capital_3 == i || incorrect_random_capital_3 == incorrect_random_capital_1 || incorrect_random_capital_3 == incorrect_random_capital_2){
-                incorrect_random_capital_3 = random_capital_3.nextInt(capital.size());
+                incorrect_random_capital_3 = random.nextInt(capital.size());
             }
             // System.out.println(capital.get(incorrect_random_capital_3));
 
@@ -146,7 +149,7 @@ public class Logic_for_app {
 //Мы меняем в массиве местами 2 позиции: позицию правильного ответа и позицию случайной строки
 //                    System.out.println("Начали перемешивать" );
             Random a_c = new Random();
-            int temp_i = a_c.nextInt(answer_capital.length);
+            int temp_i = random.nextInt(answer_capital.length);
             String temp = answer_capital[temp_i];
             //System.out.println("Сгенерировали случайное число " + temp_i + " и поменяли местами 2 позиции: позицию правильного ответа и случайного числа");
             answer_capital[temp_i] = answer_capital[0];
